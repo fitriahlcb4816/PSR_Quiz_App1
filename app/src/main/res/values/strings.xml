@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">PSR Quiz App</string>
+    <string name="login">Login</string>
+    <string name="email">email</string>
+    <string name="Email">Email</string>
+    <string name="password">Password</string>
+    <string name="hello_student">Hello Student!</string>
+    <string name="welcome">Welcome</string>
+    <string name="register">Register</string>
+    <string name="pernilaian_sekolah_rendah_psr_quiz_app">PERNILAIAN SEKOLAH RENDAH (PSR) QUIZ APP</string>
+    <string name="get_started">Get Started</string>
+    <string name="start">Start</string>
+    <string name="Start">Start</string>
+    <string name="let_s_start">Let\'s Start</string>
+    <string name="Register">Register</string>
+    <string name="confirmpassword">ConfirmPassword</string>
+    <string name="username">Username</string>
+    <string name="create_account">Create Account</string>
+    <string name="sign_in">Sign In</string>
+    <string name="material">Material</string>
+    <string name="quiz">Quiz</string>
+    <string name="performance">Performance</string>
+    <string name="leaderboard">LeaderBoard</string>
+    <string name="Material">Material</string>
+    <string name="Quiz">Quiz</string>
+    <string name="Performance">Performance</string>
+    <string name="Leaderboard">Leaderboard</string>
+    <string name="bahasa_melayu">Bahasa Melayu</string>
+    <string name="mathematics">Mathematics</string>
+</resources>

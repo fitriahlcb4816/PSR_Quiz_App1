@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "920945675714",
+    "project_id": "psr-quiz-app",
+    "storage_bucket": "psr-quiz-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:920945675714:android:cd932e2dbabd8a1f5b9a5b",
+        "android_client_info": {
+          "package_name": "com.example.psrquizapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDx_w3BwFQ9dQPht_FhqvTs_dt7D50typA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
