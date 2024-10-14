@@ -12,5 +12,7 @@ class Quiz : AppCompatActivity() {
 
         setContentView(R.layout.activity_quiz)
 
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+
     }
 }

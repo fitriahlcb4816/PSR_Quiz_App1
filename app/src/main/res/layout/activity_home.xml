@@ -20,20 +20,10 @@
         app:layout_constraintVertical_bias="0.235"
         app:srcCompat="@drawable/__removebg_preview" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="152dp"
-        android:layout_height="56dp"
-        android:text="@string/Material"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.111"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.702" />
+
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnQuiz"
         android:layout_width="152dp"
         android:layout_height="56dp"
         android:text="@string/Quiz"
@@ -45,7 +35,7 @@
         app:layout_constraintVertical_bias="0.702" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnPerformance"
         android:layout_width="152dp"
         android:layout_height="56dp"
         android:text="@string/Performance"
@@ -57,7 +47,7 @@
         app:layout_constraintVertical_bias="0.857" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnLeaderboard"
         android:layout_width="152dp"
         android:layout_height="56dp"
         android:text="@string/Leaderboard"
@@ -67,4 +57,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.857" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="152dp"
+        android:layout_height="56dp"
+        android:text="@string/Material"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.702" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

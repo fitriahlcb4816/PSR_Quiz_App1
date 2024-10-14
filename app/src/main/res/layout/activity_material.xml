@@ -16,29 +16,29 @@
         app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.252"
+        app:layout_constraintVertical_bias="0.153"
         app:srcCompat="@drawable/maerial_removebg_preview" />
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="313dp"
-        android:layout_height="102dp"
+        android:layout_width="365dp"
+        android:layout_height="107dp"
         android:text="@string/bahasa_melayu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.739" />
+        app:layout_constraintVertical_bias="0.689" />
 
     <Button
         android:id="@+id/button6"
-        android:layout_width="313dp"
-        android:layout_height="102dp"
+        android:layout_width="365dp"
+        android:layout_height="107dp"
         android:text="@string/mathematics"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.925" />
+        app:layout_constraintVertical_bias="0.88" />
 </androidx.constraintlayout.widget.ConstraintLayout>
