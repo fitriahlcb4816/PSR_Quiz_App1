@@ -9,12 +9,13 @@ import com.example.psrquizapp.databinding.ActivityMquiz1Binding
 
 class MQuiz1 : AppCompatActivity() {
 
-    lateinit var binding: ActivityMquiz1Binding
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMquiz1Binding.inflate(layoutInflater)
-        setContentView(binding.root)
+
+        setContentView(R.layout.activity_mquiz1)
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
 
     }
 }
