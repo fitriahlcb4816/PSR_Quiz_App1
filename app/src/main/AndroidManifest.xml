@@ -15,9 +15,20 @@
         android:theme="@style/Theme.PSRQuizApp"
         tools:targetApi="31">
         <activity
+            android:name=".MQuiz1"
+            android:exported="false" />
+        <activity
+            android:name=".MQuiz"
+            android:exported="true"
+            android:parentActivityName=".Quiz" />
+        <activity
+            android:name=".BMQuiz"
+            android:exported="true"
+            android:parentActivityName=".Quiz" />
+        <activity
             android:name=".MLesson"
             android:exported="true"
-            android:parentActivityName=".Material"/>
+            android:parentActivityName=".Material" />
         <activity
             android:name=".BMLesson"
             android:exported="true"
@@ -27,23 +38,28 @@
             android:exported="false" />
         <activity
             android:name=".Performance"
-            android:exported="false" />
+            android:exported="true"
+            android:parentActivityName=".Home" />
         <activity
             android:name=".LeaderBoard"
-            android:exported="false" />
+            android:exported="true"
+            android:parentActivityName=".Home" />
         <activity
             android:name=".Material"
             android:exported="true"
             android:parentActivityName=".Home" />
         <activity
             android:name=".Quiz"
-            android:exported="false" />
+            android:exported="true"
+            android:parentActivityName=".Home" />
         <activity
             android:name=".Register"
             android:exported="false" />
         <activity
             android:name=".Login"
-            android:exported="false" />
+            android:exported="false">
+
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">

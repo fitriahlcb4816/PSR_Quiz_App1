@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MQuiz1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/question_5_10"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:id="@+id/questionID">
+        </TextView>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/timer"
+            android:layout_toStartOf="@+id/digitalTimer"
+            android:layout_marginEnd="6dp"
+            android:layout_centerVertical="true">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_04_32_00"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/digitalTimer">
+
+        </TextView>
+    </RelativeLayout>
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        tools:progress="50"
+        android:id="@+id/progressIndicator">
+    </com.google.android.material.progressindicator.LinearProgressIndicator>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="10dp"
+        android:elevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                tools:text="Nazirah Bought 10Kg of flour and only used 70% of it for the cookies sales. How many Kg of flour did she use?"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:gravity="center"
+                android:background="@color/black"
+                android:textColor="@color/white"
+                android:layout_marginVertical="10dp"
+                android:id="@+id/Question1">
+            </TextView>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                tools:text="4 Kg"
+                android:paddingVertical="12dp"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:id="@+id/btn4Kg">
+            </Button>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                tools:text="7 Kg"
+                android:paddingVertical="12dp"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:id="@+id/btn7Kg">
+            </Button>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                tools:text="9 Kg"
+                android:paddingVertical="12dp"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:id="@+id/btn9Kg">
+            </Button>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                tools:text="5 Kg"
+                android:paddingVertical="12dp"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:id="@+id/btn5Kg">
+            </Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                tools:text="Next"
+                android:paddingVertical="12dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="end"
+                android:textSize="20sp"
+                android:paddingHorizontal="40dp"
+                android:id="@+id/btnNext">
+            </Button>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

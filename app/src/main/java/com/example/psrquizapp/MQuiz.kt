@@ -8,25 +8,17 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class Quiz : AppCompatActivity() {
+class MQuiz : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        setContentView(R.layout.activity_quiz)
+        setContentView(R.layout.activity_mquiz)
 
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
 
-        val buttonBM = findViewById<Button>(R.id.buttonBM)
-        buttonBM.setOnClickListener{
-            val intent = Intent (this, BMQuiz::class.java)
+        val QuizM1 = findViewById<Button>(R.id.QuizM1)
+        QuizM1.setOnClickListener{
+            val intent = Intent (this, MQuiz1::class.java)
             startActivity(intent)
         }
-
-        val buttonM = findViewById<Button>(R.id.buttonM)
-        buttonM.setOnClickListener{
-            val intent = Intent (this, MQuiz::class.java)
-            startActivity(intent)
-        }
-
     }
 }

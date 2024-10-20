@@ -5,34 +5,23 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BMLesson">
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="417dp"
-        android:layout_height="421dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/bahasamelayu_removebg_preview" />
+    tools:context=".MQuiz">
 
     <Button
-        android:id="@+id/Lesson1"
+        android:id="@+id/QuizM1"
         android:layout_width="358dp"
         android:layout_height="52dp"
-        android:text="@string/lesson_1"
+        android:text="@string/quiz_1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/Lesson2"
+        android:id="@+id/QuizM2"
         android:layout_width="358dp"
         android:layout_height="52dp"
-        android:text="@string/lesson_2"
+        android:text="@string/quiz_2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
@@ -41,10 +30,10 @@
         app:layout_constraintVertical_bias="0.587" />
 
     <Button
-        android:id="@+id/Lesson3"
+        android:id="@+id/QuizM3"
         android:layout_width="358dp"
         android:layout_height="52dp"
-        android:text="@string/lesson_3"
+        android:text="@string/quiz_3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.509"
@@ -53,10 +42,10 @@
         app:layout_constraintVertical_bias="0.675" />
 
     <Button
-        android:id="@+id/Lesson4"
+        android:id="@+id/QuizM4"
         android:layout_width="358dp"
         android:layout_height="52dp"
-        android:text="@string/lesson_4"
+        android:text="@string/quiz_4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.509"
@@ -65,27 +54,38 @@
         app:layout_constraintVertical_bias="0.764" />
 
     <Button
-        android:id="@+id/Lesson5"
+        android:id="@+id/QuizM5"
         android:layout_width="358dp"
         android:layout_height="52dp"
-        android:text="@string/lesson_5"
+        android:text="@string/quiz_5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.852" />
+        app:layout_constraintVertical_bias="0.851" />
 
     <Button
-        android:id="@+id/Lesson6"
+        android:id="@+id/QuizM6"
         android:layout_width="358dp"
         android:layout_height="52dp"
-        android:text="@string/lesson_6"
+        android:text="@string/quiz_6"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.941" />
+        app:layout_constraintVertical_bias="0.938" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="408dp"
+        android:layout_height="445dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/maths_removebg_preview" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
