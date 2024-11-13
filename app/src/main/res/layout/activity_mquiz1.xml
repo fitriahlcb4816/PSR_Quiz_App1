@@ -1,142 +1,149 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp"
-    tools:context=".MQuiz1">
+    android:background="#F5F5F5"
+    android:padding="16dp">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/question_5_10"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:layout_centerVertical="true"
-            android:id="@+id/questionID">
-        </TextView>
-
-        <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:src="@drawable/timer"
-            android:layout_toStartOf="@+id/digitalTimer"
-            android:layout_marginEnd="6dp"
-            android:layout_centerVertical="true">
-        </ImageView>
+    <!-- Timer TextView with Icon -->
+    <LinearLayout
+        android:id="@+id/timerLayoutM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="16dp">
 
         <TextView
+            android:id="@+id/timerTextViewM"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/_04_32_00"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:layout_alignParentEnd="true"
-            android:id="@+id/digitalTimer">
+            android:text="01:00"
+            android:textSize="20sp"
+            android:textColor="#FF0000"
+            android:paddingStart="8dp" />
+    </LinearLayout>
 
-        </TextView>
-    </RelativeLayout>
+    <!-- Quiz Progress -->
+    <TextView
+        android:id="@+id/progressTextViewM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question 1 of 5"
+        android:textSize="18sp"
+        android:textColor="#757575"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@id/timerLayoutM" />
 
-    <com.google.android.material.progressindicator.LinearProgressIndicator
+    <!-- Question Card -->
+    <LinearLayout
+        android:id="@+id/questionCardM"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="10dp"
-        tools:progress="50"
-        android:id="@+id/progressIndicator">
-    </com.google.android.material.progressindicator.LinearProgressIndicator>
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_below="@id/progressTextViewM"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp">
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginVertical="10dp"
-        android:elevation="5dp">
-
-        <LinearLayout
+        <TextView
+            android:id="@+id/questionTextViewM"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="20dp">
+            android:text="Question?"
+            android:textSize="20sp"
+            android:textColor="#333333"
+            android:paddingBottom="12dp" />
+    </LinearLayout>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                tools:text="Nazirah Bought 10Kg of flour and only used 70% of it for the cookies sales. How many Kg of flour did she use?"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:padding="10dp"
-                android:gravity="center"
-                android:background="@color/black"
-                android:textColor="@color/white"
-                android:layout_marginVertical="10dp"
-                android:id="@+id/Question1">
-            </TextView>
+    <!-- Options Card -->
+    <LinearLayout
+        android:id="@+id/optionsCardM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:padding="16dp"
+        android:layout_below="@id/questionCardM"
+        android:layout_marginBottom="24dp">
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginVertical="5dp"
-                tools:text="4 Kg"
-                android:paddingVertical="12dp"
-                android:gravity="center_vertical"
-                android:textSize="20sp"
-                android:id="@+id/btn4Kg">
-            </Button>
+        <!-- RadioGroup for Options -->
+        <RadioGroup
+            android:id="@+id/optionsRadioGroupM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginVertical="5dp"
-                tools:text="7 Kg"
-                android:paddingVertical="12dp"
-                android:gravity="center_vertical"
-                android:textSize="20sp"
-                android:id="@+id/btn7Kg">
-            </Button>
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginVertical="5dp"
-                tools:text="9 Kg"
-                android:paddingVertical="12dp"
-                android:gravity="center_vertical"
-                android:textSize="20sp"
-                android:id="@+id/btn9Kg">
-            </Button>
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginVertical="5dp"
-                tools:text="5 Kg"
-                android:paddingVertical="12dp"
-                android:gravity="center_vertical"
-                android:textSize="20sp"
-                android:id="@+id/btn5Kg">
-            </Button>
-
-            <Button
+            <RadioButton
+                android:id="@+id/option1RadioButtonM"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginVertical="5dp"
-                tools:text="Next"
-                android:paddingVertical="12dp"
-                android:gravity="center_vertical"
-                android:layout_gravity="end"
-                android:textSize="20sp"
-                android:paddingHorizontal="40dp"
-                android:id="@+id/btnNext">
-            </Button>
+                android:text="Option 1"
+                android:textSize="18sp"
+                android:textColor="#555555"
+                android:paddingVertical="8dp" />
 
+            <RadioButton
+                android:id="@+id/option2RadioButtonM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Option 2"
+                android:textSize="18sp"
+                android:textColor="#555555"
+                android:paddingVertical="8dp" />
 
-        </LinearLayout>
+            <RadioButton
+                android:id="@+id/option3RadioButtonM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Option 3"
+                android:textSize="18sp"
+                android:textColor="#555555"
+                android:paddingVertical="8dp" />
 
-    </androidx.cardview.widget.CardView>
+            <RadioButton
+                android:id="@+id/option4RadioButtonM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Option 4"
+                android:textSize="18sp"
+                android:textColor="#555555"
+                android:paddingVertical="8dp" />
+        </RadioGroup>
+    </LinearLayout>
 
-</LinearLayout>
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/submitButtonM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#3F51B5"
+        android:layout_below="@id/optionsCardM"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_button"/>
+
+    <!-- Score TextView -->
+    <TextView
+        android:id="@+id/scoreTextViewM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: 0"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:layout_below="@id/submitButtonM"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"/>
+
+</RelativeLayout>

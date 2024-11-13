@@ -15,9 +15,101 @@
         android:theme="@style/Theme.PSRQuizApp"
         tools:targetApi="31">
         <activity
+            android:name=".ArahanBM"
+            android:exported="true"
+            android:parentActivityName=".BMQuiz"/>
+
+        <activity
+            android:name=".MQuiz4"
+            android:exported="true"
+            android:parentActivityName=".MQuiz" />
+        <activity
+            android:name=".MQuiz3"
+            android:exported="true"
+            android:parentActivityName=".MQuiz" />
+        <activity
+            android:name=".MQuiz2"
+            android:exported="true"
+            android:parentActivityName=".MQuiz" />
+        <activity
             android:name=".MQuiz1"
             android:exported="true"
-            android:parentActivityName=".MQuiz"/>
+            android:parentActivityName=".MQuiz" />
+        <activity
+            android:name=".StudentProfileActivity"
+            android:exported="true"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".PerformanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BmQuiz3"
+            android:exported="true"
+            android:parentActivityName=".BMQuiz" />
+        <activity
+            android:name=".LeaderBoardActivity"
+            android:exported="true"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".BMQuiz4"
+            android:exported="true"
+            android:parentActivityName=".BMQuiz" />
+        <activity
+            android:name=".BMQuiz2"
+            android:exported="true"
+            android:parentActivityName=".BMQuiz" />
+        <activity
+            android:name=".BMQuiz1"
+            android:exported="true"
+            android:parentActivityName=".BMQuiz" />
+        <activity
+            android:name=".MLesson6"
+            android:exported="true"
+            android:parentActivityName=".MLesson" />
+        <activity
+            android:name=".MLesson5"
+            android:exported="true"
+            android:parentActivityName=".MLesson" />
+        <activity
+            android:name=".MLesson4"
+            android:exported="true"
+            android:parentActivityName=".MLesson" />
+        <activity
+            android:name=".MLesson3"
+            android:exported="true"
+            android:parentActivityName=".MLesson" />
+        <activity
+            android:name=".MLesson2"
+            android:exported="true"
+            android:parentActivityName=".MLesson" />
+        <activity
+            android:name=".MLesson1"
+            android:exported="true"
+            android:parentActivityName=".MLesson" />
+        <activity
+            android:name=".BMLesson6"
+            android:exported="true"
+            android:parentActivityName=".BMLesson" />
+        <activity
+            android:name=".BMLesson5"
+            android:exported="true"
+            android:parentActivityName=".BMLesson" />
+        <activity
+            android:name=".BMLesson4"
+            android:exported="true"
+            android:parentActivityName=".BMLesson" />
+        <activity
+            android:name=".BMLesson3"
+            android:exported="true"
+            android:parentActivityName=".BMLesson" />
+        <activity
+            android:name=".BMLesson2"
+            android:exported="true"
+            android:parentActivityName=".BMLesson" />
+        <activity
+            android:name=".BMLesson1"
+            android:exported="true"
+            android:parentActivityName=".BMLesson" />
         <activity
             android:name=".MQuiz"
             android:exported="true"
@@ -38,14 +130,6 @@
             android:name=".Home"
             android:exported="false" />
         <activity
-            android:name=".Performance"
-            android:exported="true"
-            android:parentActivityName=".Home" />
-        <activity
-            android:name=".LeaderBoard"
-            android:exported="true"
-            android:parentActivityName=".Home" />
-        <activity
             android:name=".Material"
             android:exported="true"
             android:parentActivityName=".Home" />
@@ -58,9 +142,7 @@
             android:exported="false" />
         <activity
             android:name=".Login"
-            android:exported="false">
-
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

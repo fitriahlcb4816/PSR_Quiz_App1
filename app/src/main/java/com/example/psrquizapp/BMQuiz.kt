@@ -1,6 +1,8 @@
 package com.example.psrquizapp
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -13,6 +15,33 @@ class BMQuiz : AppCompatActivity() {
         setContentView(R.layout.activity_bmquiz)
 
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+
+
+        val Quiz1  = findViewById<Button>(R.id.Quiz1)
+        Quiz1.setOnClickListener{
+            val intent = Intent ( this, ArahanBM::class.java)
+            startActivity(intent)
+        }
+
+        val Quiz2  = findViewById<Button>(R.id.Quiz2)
+        Quiz2.setOnClickListener{
+            val intent = Intent ( this, BMQuiz2::class.java)
+            startActivity(intent)
+        }
+
+        val Quiz3  = findViewById<Button>(R.id.Quiz3)
+        Quiz3.setOnClickListener{
+            val intent = Intent ( this, BmQuiz3::class.java)
+            startActivity(intent)
+        }
+
+        val Quiz4  = findViewById<Button>(R.id.Quiz4)
+        Quiz4.setOnClickListener{
+            val intent = Intent ( this, BMQuiz4::class.java)
+            startActivity(intent)
+        }
+
+
 
     }
 }

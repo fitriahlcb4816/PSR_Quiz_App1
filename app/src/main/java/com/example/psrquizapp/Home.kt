@@ -2,11 +2,9 @@ package com.example.psrquizapp
 
 import android.content.Intent
 import android.os.Bundle
+import android.provider.ContactsContract.Profile
 import android.widget.Button
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class Home : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,15 +24,18 @@ class Home : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val btnPerformance = findViewById<Button>(R.id.btnPerformance)
-        btnPerformance.setOnClickListener{
-            val intent = Intent (this, Performance::class.java)
+        val Profile = findViewById<Button>(R.id.Profile)
+        Profile.setOnClickListener{
+            val intent = Intent (this, StudentProfileActivity::class.java)
             startActivity(intent)
         }
 
+
+
+
         val btnLeaderBoard = findViewById<Button>(R.id.btnLeaderboard)
         btnLeaderBoard.setOnClickListener{
-            val intent = Intent (this, LeaderBoard::class.java)
+            val intent = Intent (this, LeaderBoardActivity::class.java)
             startActivity(intent)
         }
 

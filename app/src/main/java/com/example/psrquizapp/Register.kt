@@ -2,12 +2,8 @@ package com.example.psrquizapp
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.psrquizapp.databinding.ActivityRegister2Binding
 import com.google.firebase.auth.FirebaseAuth
 
@@ -20,46 +16,44 @@ class Register : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         binding = ActivityRegister2Binding.inflate(layoutInflater)
-
         setContentView(binding.root)
 
         firebaseAuth = FirebaseAuth.getInstance()
 
-        binding.textView.setOnClickListener{
+        binding.textView.setOnClickListener {
             val intent = Intent(this, Login::class.java)
             startActivity(intent)
         }
 
-        binding.btnRegister.setOnClickListener{
-            val Email = binding.Email.text.toString()
-            val Password = binding.Password.text.toString()
-            val ConfirmPassword = binding.ConfirmPassword.text.toString()
+        binding.btnRegister.setOnClickListener {
+            val email = binding.Email.text.toString().trim()
+            val password = binding.Password.text.toString().trim()
+            val confirmPassword = binding.ConfirmPassword.text.toString().trim()
 
-            if (Email.isNotEmpty() && Password.isNotEmpty()){
-                if(Password == ConfirmPassword) {
-
-                   firebaseAuth.createUserWithEmailAndPassword(Email, Password).addOnCompleteListener{
-                        if (it.isSuccessful){
-
-                            val intent = Intent(this, Login::class.java)
-                            startActivity(intent)
-
+            if (email.isNotEmpty() && password.isNotEmpty() && confirmPassword.isNotEmpty()) {
+                if (password == confirmPassword) {
+                    firebaseAuth.createUserWithEmailAndPassword(email, password)
+                        .addOnCompleteListener { task ->
+                            if (task.isSuccessful) {
+                                Toast.makeText(this, "Registration Successful!", Toast.LENGTH_SHORT).show()
+                                val intent = Intent(this, Login::class.java)
+                                startActivity(intent)
+                                finish()
+                            } else {
+                                Toast.makeText(this, "Registration Failed: ${task.exception?.message}", Toast.LENGTH_LONG).show()
+                            }
                         }
-                   }
-
-                }else{
-                    Toast.makeText(this, "Password is not matching", Toast.LENGTH_SHORT).show()
+                } else {
+                    Toast.makeText(this, "Password does not match", Toast.LENGTH_SHORT).show()
                 }
-            }else{
-                Toast.makeText(this, "Empty Fields Are Not Allowed" , Toast.LENGTH_SHORT).show()
+            } else {
+                Toast.makeText(this, "Empty fields are not allowed", Toast.LENGTH_SHORT).show()
             }
         }
 
-        val btnSignIn = findViewById<Button>(R.id.btn_signIn)
-        btnSignIn.setOnClickListener{
-            val intent = Intent ( this, Login::class.java)
+        binding.btnSignIn.setOnClickListener {
+            val intent = Intent(this, Login::class.java)
             startActivity(intent)
         }
-
     }
 }

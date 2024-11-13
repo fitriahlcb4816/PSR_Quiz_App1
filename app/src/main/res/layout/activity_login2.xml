@@ -42,10 +42,21 @@
             android:id="@+id/Password"
             android:hint="@string/password"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:inputType="textPassword">
+
         </com.google.android.material.textfield.TextInputEditText>
 
     </com.google.android.material.textfield.TextInputLayout>
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show_password">
+
+        </CheckBox>
+
 
     <com.google.android.material.textfield.TextInputLayout
 

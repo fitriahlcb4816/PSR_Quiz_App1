@@ -3,6 +3,7 @@ package com.example.psrquizapp
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.text.InputType
 import android.widget.Button
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -48,6 +49,18 @@ class Login : AppCompatActivity() {
             }else{
                 Toast.makeText(this, "Empty Fields Are Not Allowed" , Toast.LENGTH_SHORT).show()
             }
+        }
+
+        binding.checkbox.setOnCheckedChangeListener { _, isChecked ->
+            if (isChecked) {
+                // Show password
+                binding.Password.inputType = InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD
+            } else {
+                // Hide password
+                binding.Password.inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_VARIATION_PASSWORD
+            }
+            // Move cursor to the end
+            binding.Password.setSelection(binding.Password.text?.length ?: 0)
         }
 
         val btnRegister = findViewById<Button>(R.id.btn_Register)

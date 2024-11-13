@@ -64,28 +64,4 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.764" />
 
-    <Button
-        android:id="@+id/Quiz5"
-        android:layout_width="358dp"
-        android:layout_height="52dp"
-        android:text="@string/quiz_5"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.851" />
-
-    <Button
-        android:id="@+id/Quiz6"
-        android:layout_width="358dp"
-        android:layout_height="52dp"
-        android:text="@string/quiz_6"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.938" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

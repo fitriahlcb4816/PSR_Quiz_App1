@@ -51,4 +51,25 @@
     <string name="Lesson_6">Lesson 6</string>
     <string name="question_5_10">Question 5/10</string>
     <string name="_04_32_00">04:32:00</string>
+    <string name="weekly">Weekly</string>
+    <string name="monthly">Monthly</string>
+    <string name="all_time">All Time</string>
+    <string name="_1_10">1/10</string>
+    <string name="_23_02_mins">23 : 02 mins</string>
+    <string name="next">Next</string>
+    <string name="show_password">Show Password</string>
+    <string name="Weekly">Weekly</string>
+    <string name="Monthly">Monthly</string>
+    <string name="All_time">All Time</string>
+    <string name="_1">1</string>
+    <string name="title">Title</string>
+    <string name="_00000">00000</string>
+    <string name="_0">0</string>
+    <string name="_0000">0000</string>
+    <string name="answer">answer</string>
+    <string name="Answer">Answer</string>
+    <string name="question_1_10">Question 1/10</string>
+    <string name="profile">Profile</string>
+    <string name="Profile">Profile</string>
+    <string name="arahan">Arahan</string>
 </resources>
