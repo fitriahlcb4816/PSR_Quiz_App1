@@ -13,27 +13,28 @@ class MQuiz : AppCompatActivity() {
 
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
 
+
         val QuizM1  = findViewById<Button>(R.id.QuizM1)
         QuizM1.setOnClickListener{
-            val intent = Intent ( this, MQuiz1::class.java)
+            val intent = Intent ( this, InstructionMaths::class.java)
             startActivity(intent)
         }
 
         val QuizM2  = findViewById<Button>(R.id.QuizM2)
         QuizM2.setOnClickListener{
-            val intent = Intent ( this, MQuiz2::class.java)
+            val intent = Intent ( this, InstructionMaths2::class.java)
             startActivity(intent)
         }
 
         val QuizM3  = findViewById<Button>(R.id.QuizM3)
         QuizM3.setOnClickListener{
-            val intent = Intent ( this, MQuiz3::class.java)
+            val intent = Intent ( this, InstructionMaths3::class.java)
             startActivity(intent)
         }
 
         val QuizM4  = findViewById<Button>(R.id.QuizM4)
         QuizM4.setOnClickListener{
-            val intent = Intent ( this, MQuiz4::class.java)
+            val intent = Intent ( this, InstructionMaths4::class.java)
             startActivity(intent)
         }
 

@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.os.CountDownTimer
 import android.view.View
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.RadioButton
 import android.widget.RadioGroup
 import android.widget.TextView
@@ -28,6 +29,7 @@ class MQuiz4 : AppCompatActivity() {
     private lateinit var scoreTextViewM3: TextView
     private lateinit var timerTextViewM3: TextView
     private lateinit var progressTextViewM3: TextView
+    private lateinit var questionImageViewM3: ImageView
 
     private lateinit var quiz: QuizQuestion
     private lateinit var timer: CountDownTimer
@@ -50,19 +52,19 @@ class MQuiz4 : AppCompatActivity() {
         scoreTextViewM3 = findViewById(R.id.scoreTextViewM3)
         timerTextViewM3 = findViewById(R.id.timerTextViewM3)
         progressTextViewM3 = findViewById(R.id.progressTextViewM3)
+        questionImageViewM3 = findViewById(R.id.questionImageViewM3)
 
         // Initialize a list of questions
         val questions = listOf(
-            Question("Buang sampah yang bertaburan itu ke dalam tong sampah, kata ayah kepada anaknya?", listOf("Ayat Suruhan", "Ayat Seruan", "Ayat Penyata", "Ayat Larangan"), 0),
-            Question("Wah, besarnya Villa di atas bukit itu!", listOf("Ayat Penyata", "Ayat Tanya", "Ayat Seruan", "Ayat Suruhan"), 2),
-            Question("Amanda tidak pergi ke sekolah hari ini", listOf("Ayat Seruan", "Ayat Suruhan", "Ayat Larangan", "Ayat Penyata"), 3),
-            Question("Bilakah tarikh hari ulang tahun Baginda?", listOf("Ayat Suruhan", "Ayat Tanya", "Ayat Penyata", "Ayat Larangan"), 1),
-            Question("Tidak usah awak campur tangan dalam hal peribadi saya", listOf("Ayat Penyata", "Ayat Larangan", "Ayat Seruan", "Ayat Suruhan"), 1),
-            Question("Tolong simpan buku-buku ini di bilik guru", listOf("Ayat Tanya", "Ayat Langan", "Ayat Suruhan", "Ayat Penyata"), 2),
-            Question("Bagaimana awak membuat kuih ini?", listOf("Ayat Suruhan", "Ayat Tanya", "Ayat Penyata", "Ayat Larangan"), 1),
-            Question("Oh, saya lupa membawa uang hari ini!", listOf("Ayat Penyata", "Ayat Tanya", "Ayat Seruan", "Ayat Suruhan"), 2),
-            Question("Dia suka menonton rancangan televisyen", listOf("Ayat Seruan", "Ayat Suruhan", "Ayat Larangan", "Ayat Penyata"), 3),
-            Question("Jangan bermain mercun, nanti terbakar tangan", listOf("Ayat Larangan", "Ayat Seruan", "Ayat Tanya", "Ayat Penyata"), 0)
+            Question("Choose the right answer", listOf("A", "B", "C", "D"), 1, R.drawable.soalan4),
+            Question("Choose the answer of number eighty thousand, three hundred and six", listOf("80,360", "80,306", "80,036", "80,063"), 2),
+            Question("What is her change?", listOf("10p", "25p", "20p", "15p"), 3, R.drawable.soalan5),
+            Question("How many children vote for strawberry?", listOf("45", "123", "100", "73"), 1, R.drawable.soalan6),
+            Question("Choose he fractionsthat represent the shades part of the grid", listOf("4/10", "40/100", "6/10", "1/4"), 1, R.drawable.soalan7),
+            Question("What is total length of all the straws in her model?", listOf("27", "233.75", "701.25", "81"), 2,R.drawable.soalan8),
+            Question("What is the price for printing a design that has 3 colors in it?", listOf("543.75", "181.25", "61.25", "180.00"), 1, R.drawable.soalan10),
+            Question("Which digital clocks that show the time", listOf("9:13 / 21:13", "3:45 / 13:45 ", "2:45 / 14: 45", "9:45 / 21:45"), 2, R.drawable.soalan11)
+
         )
 
         // Initialize the Quiz with the questions
@@ -129,7 +131,18 @@ class MQuiz4 : AppCompatActivity() {
         val totalQuestions = quiz.getTotalQuestions()
         progressTextViewM3.text = "Question $currentQuestionIndex of $totalQuestions"
         updateScore()
+
+        // Set the question image if there is one
+        currentQuestion.imageResId?.let { imageResId ->
+            questionImageViewM3.setImageResource(imageResId)
+            questionImageViewM3.visibility = View.VISIBLE
+        } ?: run {
+            questionImageViewM3.visibility = View.GONE // Hide if no image
+        }
+
+        // Set up options and progress text (as before)
     }
+
 
     private fun updateScore() {
         scoreTextViewM3.text = "Score: ${quiz.getScore()}"

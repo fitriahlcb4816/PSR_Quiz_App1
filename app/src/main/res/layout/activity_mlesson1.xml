@@ -1,17 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MLesson1">
+    android:background="#F5F5F5"
+    android:padding="16dp"
+    tools:ignore="SpeakableTextPresentCheck">
 
-    <ImageView
-        android:id="@+id/imageView20"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/prime"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="322dp"
+            android:layout_height="394dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/prime"
+            tools:srcCompat="@drawable/ic_launcher_foreground" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="322dp"
+            android:layout_height="394dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/composite"
+            tools:srcCompat="@drawable/ic_launcher_foreground" />
+
+    </LinearLayout>
+</ScrollView>

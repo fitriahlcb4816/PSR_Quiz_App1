@@ -33,6 +33,7 @@ class PerformanceActivity : AppCompatActivity() {
             val intent = Intent ( this, BMQuiz::class.java)
             startActivity(intent)
         }
+
     }
 
 }

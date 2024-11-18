@@ -1,10 +1,472 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BMLesson3">
+    android:padding="16dp"
+    android:background="#F5F5F5">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kata Ganda"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:textColor="#2D2D2D" />
+
+        <!-- Description of Kata Ganda -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kata ganda ialah proses pengulangan kata secara keseluruhan atau pada bahagian-bahagian yang tertentu."
+            android:textSize="16sp"
+            android:paddingBottom="16dp"
+            android:textColor="#555555"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Menurut Tatabahasa Dewan Edisi Dewan Edisi Bahasa (Nik Safiah Karim): Kata ganda ialah bentuk yang dihasilkan dengan menggandakan atau mengulang kata dasar tersebut diulang secara seluruh/pada bahagian-bahagian tertentu dengan imbuhan atau tanpa imbuhan."
+            android:textSize="16sp"
+            android:paddingBottom="16dp"
+            android:textColor="#555555"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Penggandaan terbahagi kepada empat iaitu :"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"
+            android:textColor="#444444" />
+
+        <!-- List of Types -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="- Kata ganda seluruh\n- Kata ganda separa\n- Kata ganda berentak/berima\n- Kata ganda berimbuhan"
+            android:textSize="16sp"
+            android:paddingBottom="16dp"
+            android:textColor="#555555"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="4dp" />
+
+        <!-- Kata Ganda Seluruh Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kata Ganda Seluruh"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"
+            android:textColor="#444444" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kata ganda penuh/seluruh melibatkan seluruh kata dasar yang diulang atau digandakan tanpa sebarang perubahan bentuk."
+            android:textSize="16sp"
+            android:paddingBottom="16dp"
+            android:textColor="#555555"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="4dp" />
+
+        <!-- Kata Ganda Seluruh Examples Table -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp"
+            android:divider="#CCCCCC"
+            android:showDividers="middle">
+
+            <!-- Header Row -->
+            <TableRow android:background="#E0E0E0">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kata Nama"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:background="#E0E0E0"
+                    android:textColor="#000000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kata Kerja"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:background="#E0E0E0"
+                    android:textColor="#000000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kata Adjektif"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:background="#E0E0E0"
+                    android:textColor="#000000" />
+            </TableRow>
+
+            <!-- Example Row 1 -->
+            <TableRow android:background="#FAFAFA">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Buku"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textColor="#333333" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pusing-pusing"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textColor="#333333" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cantik-cantik"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textColor="#333333" />
+            </TableRow>
+
+            <!-- Example Row 2 -->
+            <TableRow android:background="#FFFFFF">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Murid"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textColor="#333333" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Geleng-geleng"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textColor="#333333" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Panjang-panjang"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textColor="#333333" />
+            </TableRow>
+
+            <!-- Example Row 3 -->
+            <TableRow android:background="#FAFAFA">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Meja"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textColor="#333333" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gelak-gelak"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textColor="#333333" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Merah-merah"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textColor="#333333" />
+            </TableRow>
+
+        </TableLayout>
+
+        <!-- Kata Ganda Separa Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kata Ganda Separa"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"
+            android:textColor="#444444" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kata ganda separa ialah kata ganda yang mengalami pengulangan suku kata pertama pada kata asalnya. Selain itu, bunyi vokal pada suku kata pertama berubah menjadi vokal yang dilambangkan dengan huruf e."
+            android:textSize="16sp"
+            android:paddingBottom="16dp"
+            android:textColor="#555555"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="4dp" />
+
+        <!-- Kata Ganda Separa Examples Table -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp"
+            android:divider="#CCCCCC"
+            android:showDividers="middle">
+
+            <!-- Header Row -->
+            <TableRow android:background="#E0E0E0">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kata Dasar"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:background="#E0E0E0"
+                    android:textColor="#000000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kata Ganda"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:background="#E0E0E0"
+                    android:textColor="#000000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kata Ganda Separa"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:background="#E0E0E0"
+                    android:textColor="#000000" />
+            </TableRow>
+
+            <!-- Example Rows for Kata Ganda Separa -->
+            <TableRow android:background="#FAFAFA">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Layang"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textColor="#333333" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Layang-layang"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textColor="#333333" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lelayang"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textColor="#333333" />
+            </TableRow>
+
+            <!-- Additional example rows for Kuda, Tupai, Siku, etc. -->
+            <!-- Repeat the pattern as shown for other examples -->
+        </TableLayout>
+
+        <!-- Kata Ganda Berirama Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kata Ganda Berirama"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"
+            android:textColor="#444444" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kata ganda berima/berentak merupakan proses menggandakan kata dasar mengikut rentak bunyi tertentu dalam kata dasar tersebut."
+            android:textSize="16sp"
+            android:paddingBottom="16dp"
+            android:textColor="#555555"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="4dp" />
+
+        <!-- Example Rows for Kata Ganda Berirama -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Persamaan bunyi di hujung: Kuih-muih, lauk-pauk - Kuih-muih itu terhidang di atas meja"
+            android:textSize="16sp"
+            android:paddingBottom="16dp"
+            android:textColor="#555555"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Persamaan bunyi di pangkal: Batu-batan, bukit-bukau - Aktiviti gotong-royong akan diadakan esok"
+            android:textSize="16sp"
+            android:paddingBottom="16dp"
+            android:textColor="#555555"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Persesuaian bunyi keseluruhan: Kusut-masai, simpang-siur - Rambutnya kusut-masai kerana ditiup angin."
+            android:textSize="16sp"
+            android:paddingBottom="16dp"
+            android:textColor="#555555"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="4dp" />
+
+        <!-- Kata Ganda Berimbuhan Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kata Ganda Berimbuhan"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"
+            android:textColor="#444444" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kata ganda berimbuhan ialah kata ganda yang menerima imbuhan sama ada awalan, apitan, sisipan, atau akhiran."
+            android:textSize="16sp"
+            android:paddingBottom="16dp"
+            android:textColor="#555555"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="4dp" />
+
+        <!-- Kata Ganda Berimbuhan Examples -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp"
+            android:divider="#CCCCCC"
+            android:showDividers="middle">
+
+            <!-- Header Row -->
+            <TableRow android:background="#E0E0E0">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Imbuhan"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:background="#E0E0E0"
+                    android:textColor="#000000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contoh"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:background="#E0E0E0"
+                    android:textColor="#000000" />
+            </TableRow>
+
+            <!-- Example Row 1 -->
+            <TableRow android:background="#FAFAFA">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Awalan"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textColor="#333333" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bermain-main, menjerit-jerit"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textColor="#333333" />
+            </TableRow>
+
+            <!-- Example Row 2 -->
+            <TableRow android:background="#FFFFFF">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Apitan"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textColor="#333333" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bertolak-tolakan, kebodoh-bodohan"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textColor="#333333" />
+            </TableRow>
+
+            <!-- Example Row 3 -->
+            <TableRow android:background="#FAFAFA">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sisipan"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textColor="#333333" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tulang-temulang, turun-temurun"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textColor="#333333" />
+            </TableRow>
+
+            <!-- Example Row 4 -->
+            <TableRow android:background="#FFFFFF">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Akhiran"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textColor="#333333" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wangi-wangian, tumbuh-tumbuhan"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textColor="#333333" />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+</ScrollView>

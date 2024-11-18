@@ -1,10 +1,338 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BMLesson5">
+    android:padding="16dp"
+    android:background="#F5F5F5">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kata Nama"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:textColor="#2D2D2D" />
+
+        <!-- Description of Kata Nama -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kata nama ialah perkataan yang menamakan orang, tempat atau benda dan menjadi unsur utama dalam frasa nama. Kata nama terbahagi kepada:\n\nKata Nama Am\nKata Nama Khas."
+            android:textSize="16sp"
+            android:paddingBottom="16dp"
+            android:textColor="#555555"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="4dp" />
+
+        <!-- Kata Nama Am Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kata Nama Am"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"
+            android:textColor="#444444" />
+
+        <!-- Description of Kata Nama Am -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kata nama am ialah kata nama yang amnya digunakan untuk menyebut:\n- nama benda yang bernyawa\n- nama benda yang tidak bernyawa.\n\nSemua kata nama am ditulis dengan huruf kecil pada pangkal kata itu."
+            android:textSize="16sp"
+            android:paddingBottom="16dp"
+            android:textColor="#555555"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="4dp" />
+
+        <!-- Benda Bernyawa Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Benda yang bernyawa ialah manusia, binatang, dan tumbuh-tumbuhan."
+            android:textSize="16sp"
+            android:paddingBottom="8dp"
+            android:textColor="#444444" />
+
+        <!-- Benda Bernyawa Table -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp"
+            android:divider="#CCCCCC"
+            android:showDividers="middle">
+
+            <!-- Header Row -->
+            <TableRow android:background="#E0E0E0">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Manusia"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Binatang"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tumbuh-tumbuhan"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000" />
+            </TableRow>
+
+            <!-- Row of Examples -->
+            <TableRow android:background="#FAFAFA">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="emak"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textColor="#333333" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ikan"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textColor="#333333" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="cendawan"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textColor="#333333" />
+            </TableRow>
+
+            <!-- Additional rows omitted for brevity -->
+
+        </TableLayout>
+
+        <!-- Benda Tidak Bernyawa Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Benda yang tidak bernyawa ialah benda dan tempat."
+            android:textSize="16sp"
+            android:paddingBottom="8dp"
+            android:textColor="#444444" />
+
+        <!-- Benda Tidak Bernyawa Table -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp"
+            android:divider="#CCCCCC"
+            android:showDividers="middle">
+
+            <!-- Header Row -->
+            <TableRow android:background="#E0E0E0">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Benda"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tempat"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000" />
+            </TableRow>
+
+            <!-- Row of Examples -->
+            <TableRow android:background="#FAFAFA">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="pinggan"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textColor="#333333" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="hospital"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textColor="#333333" />
+            </TableRow>
+
+            <!-- Additional rows omitted for brevity -->
+
+        </TableLayout>
+
+        <!-- Kata Nama Khas Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kata Nama Khas"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"
+            android:textColor="#444444" />
+
+        <!-- Description of Kata Nama Khas -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kata nama khas ialah kata nama yang khasnya digunakan untuk menyebut nama sesuatu benda yang bernyawa dan yang tidak bernyawa. Semua kata nama khas ditulis dengan huruf besar pada pangkal kata itu."
+            android:textSize="16sp"
+            android:paddingBottom="16dp"
+            android:textColor="#555555"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="4dp" />
+
+        <!-- Benda Bernyawa Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Benda-benda yang bernyawa ialah nama manusia dan nama binatang."
+            android:textSize="16sp"
+            android:paddingBottom="8dp"
+            android:textColor="#444444" />
+
+        <!-- Benda Bernyawa Table -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp"
+            android:divider="#CCCCCC"
+            android:showDividers="middle">
+
+            <!-- Header Row -->
+            <TableRow android:background="#E0E0E0">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Manusia"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Binatang"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000" />
+            </TableRow>
+
+            <!-- Row of Examples -->
+            <TableRow android:background="#FAFAFA">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Anis"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textColor="#333333" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jalak"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textColor="#333333" />
+            </TableRow>
+
+            <!-- Additional rows omitted for brevity -->
+
+        </TableLayout>
+
+        <!-- Benda Tidak Bernyawa Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Benda-benda yang tidak bernyawa ialah nama tempat, judul buku, nama bangunan, dan sebagainya."
+            android:textSize="16sp"
+            android:paddingBottom="8dp"
+            android:textColor="#444444" />
+
+        <!-- Benda Tidak Bernyawa Table -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp"
+            android:divider="#CCCCCC"
+            android:showDividers="middle">
+
+            <!-- Header Row -->
+            <TableRow android:background="#E0E0E0">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tempat"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Judul Buku"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:textColor="#000000" />
+            </TableRow>
+
+            <!-- Row of Examples -->
+            <TableRow android:background="#FAFAFA">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Langkawi"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textColor="#333333" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aku Anak Timur"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textColor="#333333" />
+            </TableRow>
+
+            <!-- Additional rows omitted for brevity -->
+
+        </TableLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,6 +1,5 @@
 package com.example.psrquizapp
 
-import LeaderboardAdapter
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
@@ -15,9 +14,9 @@ import com.google.firebase.firestore.Query
 
 class LeaderBoardActivity : AppCompatActivity() {
 
-    private lateinit var leaderboardRecyclerView: RecyclerView
+    private lateinit var recyclerView: RecyclerView
     private lateinit var leaderboardAdapter: LeaderboardAdapter
-    private val leaderboardData = mutableListOf<StudentPerformance>()
+    private val scores = mutableListOf<UserScore>()
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,33 +25,32 @@ class LeaderBoardActivity : AppCompatActivity() {
 
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
 
-        leaderboardRecyclerView = findViewById(R.id.leaderboardRecyclerView)
-        leaderboardRecyclerView.layoutManager = LinearLayoutManager(this)
-        leaderboardAdapter = LeaderboardAdapter(leaderboardData)
-        leaderboardRecyclerView.adapter = leaderboardAdapter
+        recyclerView = findViewById(R.id.leaderboardRecyclerView)
+        leaderboardAdapter = LeaderboardAdapter(scores)
+        recyclerView.layoutManager = LinearLayoutManager(this)
+        recyclerView.adapter = leaderboardAdapter
 
-        loadLeaderboardData()
+        // Add some dummy data
+        loadDummyData()
     }
 
-    private fun loadLeaderboardData() {
-        val db = FirebaseFirestore.getInstance()
 
-        db.collection("leaderboard")
-            .orderBy("score", Query.Direction.DESCENDING)
-            .orderBy("timeTaken", Query.Direction.ASCENDING)
-            .limit(10)
-            .get()
-            .addOnSuccessListener { documents ->
-                leaderboardData.clear()
-                for (document in documents) {
-                    val performance = document.toObject(StudentPerformance::class.java)
-                    leaderboardData.add(performance)
-                }
-                leaderboardAdapter.notifyDataSetChanged()
-            }
-            .addOnFailureListener { e ->
-                Log.e("Leaderboard", "Failed to load leaderboard: ${e.message}")
-                Toast.makeText(this, "Failed to load leaderboard", Toast.LENGTH_LONG).show()
-            }
+    private fun loadDummyData() {
+        scores.clear()
+        scores.add(UserScore("Nazirah", 10000))
+        scores.add(UserScore("Mizah", 9000))
+        scores.add(UserScore("Ayu", 8000))
+        scores.add(UserScore("Wafiq", 7000))
+        scores.add(UserScore("Fitri", 6000))
+
+        scores.sortByDescending { it.score } // Sort in descending order
+        leaderboardAdapter.notifyDataSetChanged()
+    }
+
+    fun addScore(username: String, score: Int) {
+        scores.add(UserScore(username, score))
+        scores.sortByDescending { it.score } // Sort in descending order
+        leaderboardAdapter.notifyDataSetChanged()
     }
 }
+

@@ -1,5 +1,6 @@
 package com.example.psrquizapp
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -42,6 +43,12 @@ class StudentProfileActivity : AppCompatActivity() {
         // Save profile on button click
         saveButton.setOnClickListener {
             saveProfile()
+        }
+
+        val logoutBtn = findViewById<Button>(R.id.logoutBtn)
+        logoutBtn.setOnClickListener{
+            val intent = Intent (this, Login::class.java)
+            startActivity(intent)
         }
 
     }
@@ -93,5 +100,6 @@ class StudentProfileActivity : AppCompatActivity() {
                 }
         }
     }
+
 
 }

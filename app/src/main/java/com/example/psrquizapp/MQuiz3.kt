@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.os.CountDownTimer
 import android.view.View
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.RadioButton
 import android.widget.RadioGroup
 import android.widget.TextView
@@ -28,6 +29,7 @@ class MQuiz3 : AppCompatActivity() {
     private lateinit var scoreTextViewM2: TextView
     private lateinit var timerTextViewM2: TextView
     private lateinit var progressTextViewM2: TextView
+    private lateinit var questionImageViewM2: ImageView
 
     private lateinit var quiz: QuizQuestion
     private lateinit var timer: CountDownTimer
@@ -48,19 +50,20 @@ class MQuiz3 : AppCompatActivity() {
         scoreTextViewM2 = findViewById(R.id.scoreTextViewM2)
         timerTextViewM2 = findViewById(R.id.timerTextViewM2)
         progressTextViewM2 = findViewById(R.id.progressTextViewM2)
+        questionImageViewM2 = findViewById(R.id.questionImageViewM2)
 
         // Initialize a list of questions
         val questions = listOf(
-            Question("Buang sampah yang bertaburan itu ke dalam tong sampah, kata ayah kepada anaknya?", listOf("Ayat Suruhan", "Ayat Seruan", "Ayat Penyata", "Ayat Larangan"), 0),
-            Question("Wah, besarnya Villa di atas bukit itu!", listOf("Ayat Penyata", "Ayat Tanya", "Ayat Seruan", "Ayat Suruhan"), 2),
-            Question("Amanda tidak pergi ke sekolah hari ini", listOf("Ayat Seruan", "Ayat Suruhan", "Ayat Larangan", "Ayat Penyata"), 3),
-            Question("Bilakah tarikh hari ulang tahun Baginda?", listOf("Ayat Suruhan", "Ayat Tanya", "Ayat Penyata", "Ayat Larangan"), 1),
-            Question("Tidak usah awak campur tangan dalam hal peribadi saya", listOf("Ayat Penyata", "Ayat Larangan", "Ayat Seruan", "Ayat Suruhan"), 1),
-            Question("Tolong simpan buku-buku ini di bilik guru", listOf("Ayat Tanya", "Ayat Langan", "Ayat Suruhan", "Ayat Penyata"), 2),
-            Question("Bagaimana awak membuat kuih ini?", listOf("Ayat Suruhan", "Ayat Tanya", "Ayat Penyata", "Ayat Larangan"), 1),
-            Question("Oh, saya lupa membawa uang hari ini!", listOf("Ayat Penyata", "Ayat Tanya", "Ayat Seruan", "Ayat Suruhan"), 2),
-            Question("Dia suka menonton rancangan televisyen", listOf("Ayat Seruan", "Ayat Suruhan", "Ayat Larangan", "Ayat Penyata"), 3),
-            Question("Jangan bermain mercun, nanti terbakar tangan", listOf("Ayat Larangan", "Ayat Seruan", "Ayat Tanya", "Ayat Penyata"), 0)
+            Question("Amir, Borhan and Hakim have 90 marbles. Amir has 13 marbles whereas Borhan has three times as many marbles as amir. How many marbles does Hakim have?", listOf("38 Marbles", "39 Marbles", "50 Marbles", "65 marbles"), 0),
+            Question("Hariz went to supermarket to buy some mangoes. The mangeoes are sold in packs of 4. He needs to buy 30 mangoes. How many packs of mangoes does he need to buy?", listOf("7.5 Packs", "7 Packs", "8 Packs", "9 Packs"), 2),
+            Question("How much did Adam have to pay?", listOf("$5.00", "$3.50", "$4.00", "$4.50"), 3, R.drawable.soalan3),
+            Question("Plastic cupsare sold in packs of 8. Ahmad needs 27 cups. Estimates how many packs must he buy?", listOf("3 Packs", "4 Packs", "3.5 Packs", "5 Packs"), 1),
+            Question("Subtract 7012 from 9422", listOf("4201", "2410", "2140", "4297"), 1),
+            Question("Add 7 to 16 and multiple the result by 3", listOf("690", "50", "69", "96"), 2),
+            Question("Junaidi lost 27 stone so he has 22 stone left. How many stone did he have at first?", listOf("24", "49", "39", "30"), 1),
+            Question("Aminah has $20.50. Fatimah has $2.50 lee than Aminah. How much money do they have altogether?", listOf("$38.50", "$40.50", "$55.00", "$45.50"), 0),
+            Question("At an expo, an article is sold for $200. The place is reduced by $25.75. What is the new price?", listOf("$180.50", "$154.25", "$170.60", "$174.25"), 3),
+            Question("Every sunday Alus reads from 11:40am to 1:55pm. How much time does she spend on reading?", listOf("2 Hours 15 Minutes", "3 Hours", "2 Hours 45 Minutes", "3 Hours 15 Minutes"), 0)
         )
 
         // Initialize the Quiz with the questions
@@ -127,6 +130,16 @@ class MQuiz3 : AppCompatActivity() {
         val totalQuestions = quiz.getTotalQuestions()
         progressTextViewM2.text = "Question $currentQuestionIndex of $totalQuestions"
         updateScore()
+
+        // Set the question image if there is one
+        currentQuestion.imageResId?.let { imageResId ->
+            questionImageViewM2.setImageResource(imageResId)
+            questionImageViewM2.visibility = View.VISIBLE
+        } ?: run {
+            questionImageViewM2.visibility = View.GONE // Hide if no image
+        }
+
+        // Set up options and progress text (as before)
     }
 
     private fun updateScore() {

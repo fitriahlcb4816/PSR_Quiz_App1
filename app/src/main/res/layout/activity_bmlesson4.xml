@@ -1,10 +1,228 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BMLesson4">
+    android:padding="16dp"
+    android:background="#F5F5F5">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kata Perintah"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:textColor="#2D2D2D" />
+
+        <!-- Description of Kata Perintah -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kata perintah ialah ayat yang diucapkan dengan tujuan menimbulkan gerak balas yang berupa tindakan. Ayat perintah berfungsi sebagai ayat yang bermaksud suruhan, permintaan, silaan ataupun larangan."
+            android:textSize="16sp"
+            android:paddingBottom="16dp"
+            android:textColor="#555555"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="4dp" />
+
+        <!-- Kata Perintah Types Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kata perintah terbahagi kepada empat iaitu:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"
+            android:textColor="#444444" />
+
+        <!-- List of Kata Perintah Types -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="- Ayat suruhan (Untuk memberi perintah atau arahan)\n- Ayat larangan (Untuk mengah seseorang melakukan sesuatu)\n- Ayat permintaan (Untuk membuat permintaan atau pertolongan)\n- Ayat Larangan (Untuk menjemput atau mempersilakan seseorang)"
+            android:textSize="16sp"
+            android:paddingBottom="16dp"
+            android:textColor="#555555"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="4dp" />
+
+        <!-- Example of Kata Perintah Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contoh Kata Perintah:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"
+            android:textColor="#444444" />
+
+        <!-- Kata Perintah Table -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp"
+            android:divider="#CCCCCC"
+            android:showDividers="middle">
+
+            <!-- Header Row -->
+            <TableRow android:background="#E0E0E0">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kata Perintah"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:background="#E0E0E0"
+                    android:textColor="#000000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ayat Contoh"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:background="#E0E0E0"
+                    android:textColor="#000000" />
+            </TableRow>
+
+            <!-- Example Row 1 -->
+            <TableRow android:background="#FAFAFA">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Harap"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textColor="#333333" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Harap anda mematuhi peraturan di jalan raya"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textColor="#333333" />
+            </TableRow>
+
+            <!-- Example Row 2 -->
+            <TableRow android:background="#FFFFFF">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jangan"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textColor="#333333" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jangan meludah di sini"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textColor="#333333" />
+            </TableRow>
+
+            <!-- Example Row 3 -->
+            <TableRow android:background="#FAFAFA">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jemput"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textColor="#333333" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jemput makan kuih ini"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textColor="#333333" />
+            </TableRow>
+
+            <!-- Example Row 4 -->
+            <TableRow android:background="#FFFFFF">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sila"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textColor="#333333" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sila hantar kerja rumah ini esok"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textColor="#333333" />
+            </TableRow>
+
+            <!-- Example Row 5 -->
+            <TableRow android:background="#FAFAFA">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tolong"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textColor="#333333" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tolong ambil penyapu kepada saya"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textColor="#333333" />
+            </TableRow>
+
+            <!-- Example Row 6 -->
+            <TableRow android:background="#FFFFFF">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Usah"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textColor="#333333" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Usah kamu berlakon dihadapan saya"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textColor="#333333" />
+            </TableRow>
+
+            <!-- Example Row 7 -->
+            <TableRow android:background="#FAFAFA">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Minta"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textColor="#333333" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Minta tolong sekejap"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textColor="#333333" />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+</ScrollView>

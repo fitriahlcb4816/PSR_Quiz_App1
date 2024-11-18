@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.os.CountDownTimer
 import android.view.View
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.RadioButton
 import android.widget.RadioGroup
 import android.widget.TextView
@@ -28,6 +29,7 @@ class MQuiz2 : AppCompatActivity() {
     private lateinit var scoreTextViewM1: TextView
     private lateinit var timerTextViewM1: TextView
     private lateinit var progressTextViewM1: TextView
+    private lateinit var questionImageViewM1: ImageView
 
     private lateinit var quiz: QuizQuestion
     private lateinit var timer: CountDownTimer
@@ -50,19 +52,20 @@ class MQuiz2 : AppCompatActivity() {
         scoreTextViewM1 = findViewById(R.id.scoreTextViewM1)
         timerTextViewM1 = findViewById(R.id.timerTextViewM1)
         progressTextViewM1 = findViewById(R.id.progressTextViewM1)
+        questionImageViewM1 = findViewById(R.id.questionImageViewM1)
 
         // Initialize a list of questions
         val questions = listOf(
-            Question("Buang sampah yang bertaburan itu ke dalam tong sampah, kata ayah kepada anaknya?", listOf("Ayat Suruhan", "Ayat Seruan", "Ayat Penyata", "Ayat Larangan"), 0),
-            Question("Wah, besarnya Villa di atas bukit itu!", listOf("Ayat Penyata", "Ayat Tanya", "Ayat Seruan", "Ayat Suruhan"), 2),
-            Question("Amanda tidak pergi ke sekolah hari ini", listOf("Ayat Seruan", "Ayat Suruhan", "Ayat Larangan", "Ayat Penyata"), 3),
-            Question("Bilakah tarikh hari ulang tahun Baginda?", listOf("Ayat Suruhan", "Ayat Tanya", "Ayat Penyata", "Ayat Larangan"), 1),
-            Question("Tidak usah awak campur tangan dalam hal peribadi saya", listOf("Ayat Penyata", "Ayat Larangan", "Ayat Seruan", "Ayat Suruhan"), 1),
-            Question("Tolong simpan buku-buku ini di bilik guru", listOf("Ayat Tanya", "Ayat Langan", "Ayat Suruhan", "Ayat Penyata"), 2),
-            Question("Bagaimana awak membuat kuih ini?", listOf("Ayat Suruhan", "Ayat Tanya", "Ayat Penyata", "Ayat Larangan"), 1),
-            Question("Oh, saya lupa membawa uang hari ini!", listOf("Ayat Penyata", "Ayat Tanya", "Ayat Seruan", "Ayat Suruhan"), 2),
-            Question("Dia suka menonton rancangan televisyen", listOf("Ayat Seruan", "Ayat Suruhan", "Ayat Larangan", "Ayat Penyata"), 3),
-            Question("Jangan bermain mercun, nanti terbakar tangan", listOf("Ayat Larangan", "Ayat Seruan", "Ayat Tanya", "Ayat Penyata"), 0)
+            Question("Calculate the new price of the mobile phone", listOf("$240.00", "$260.00", "$200.00", "$220.00"), 0, R.drawable.soalan1),
+            Question("What is the new price after discount?", listOf("$20.00", "$29.00", "$18.00", "$12.00"), 2, R.drawable.soalan2),
+            Question("$100 is to be divided among Ayu, Peet and Adeek. Ayu gets 25% of it and Peet gets 30%. How much value of money does Adeek get?", listOf("$50.00", "$40.00", "$55.00", "$45.00"), 3),
+            Question("In a test, Irah scored 76% of a possible marks of 300. How many marks did Abdul Score?", listOf("250", "228", "230", "299"), 1),
+            Question("The price of 10kg durians wa $69.00. It was then reduced by 20%. What was the new price?", listOf("$50.00", "$55.20", "$55.00", "$50.20"), 1),
+            Question("Wafiq earns $1800 per month. He spends $1530 on household needs. What percent does he save?", listOf("27%", "25%", "15%", "10%"), 2),
+            Question("35% of 340 students were absent from the test. How many students were absent from the test?", listOf("119 Students", "100 Students", "150 Students", "99 Students"), 0),
+            Question("During the Brunei Grand sale, a baju kurung which costs $45.00 was given a discount of 10%. How much is the new price?", listOf("$50.00", "$40.00", "$40.50", "$35.50"), 2),
+            Question("Forty pupils sat for a mathematics test. 6 pupils were failed. What percentage of the pupils passed the test?", listOf("90%", "75%", "95%", "85%"), 3),
+            Question("A school library has a collection of 400 books of which 80 are new. Find the percentage of the new books", listOf("20%", "40%", "75%", "80%"), 0)
         )
 
         // Initialize the Quiz with the questions
@@ -129,6 +132,16 @@ class MQuiz2 : AppCompatActivity() {
         val totalQuestions = quiz.getTotalQuestions()
         progressTextViewM1.text = "Question $currentQuestionIndex of $totalQuestions"
         updateScore()
+
+        // Set the question image if there is one
+        currentQuestion.imageResId?.let { imageResId ->
+            questionImageViewM1.setImageResource(imageResId)
+            questionImageViewM1.visibility = View.VISIBLE
+        } ?: run {
+            questionImageViewM1.visibility = View.GONE // Hide if no image
+        }
+
+        // Set up options and progress text (as before)
     }
 
     private fun updateScore() {

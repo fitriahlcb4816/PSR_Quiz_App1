@@ -1,10 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MLesson3">
+    android:padding="16dp"
+    android:background="#F5F5F5">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Length, Mass and Volume of Liquid"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:textColor="#2D2D2D" />
+
+        <!-- Section 7.1: Measurement of Length, Mass and Volume -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Measurement of Length, Mass and Volume of Liquid"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="10dp"
+            android:textColor="#444444" />
+
+        <!-- Situation 1: Ideal Body Mass Calculation -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Situation 1:\nAjay, your height is 1.4 m.\nAjay, your mass is 36 kg.\nDoes Ajay have an ideal body mass?"
+            android:textSize="16sp"
+            android:paddingBottom="16dp"
+            android:textColor="#555555"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BMI = Body mass (kg) / Height² (m)\nBMI = 36 / (1.4 * 1.4) = 36 / 1.96 = 18.36"
+            android:textSize="16sp"
+            android:paddingBottom="16dp"
+            android:textColor="#555555" />
+
+        <!-- Situation 2: Sugar Dissolution Problem -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Situation 2:\nMrs. Jim dissolves 180g of sugar in container R. How much sugar should be dissolved in container S to achieve the same concentration?"
+            android:textSize="16sp"
+            android:paddingBottom="16dp"
+            android:textColor="#555555" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1 ml → 180 g in 1500 ml\n1 ml → 180 g / 1500 ml\n450 ml → (180 g / 1500 ml) * 450 ml = 54 g"
+            android:textSize="16sp"
+            android:paddingBottom="16dp"
+            android:textColor="#555555" />
+
+        <!-- Solve the Problems Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Solve the Problems"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="10dp"
+            android:textColor="#444444" />
+
+        <!-- Situation 1: Maria's Weight Loss Calculation -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Situation 1:\nMaria’s body mass is 68 kg. After losing 5% of her body mass over 4 weeks of exercise, calculate her new body mass."
+            android:textSize="16sp"
+            android:paddingBottom="16dp"
+            android:textColor="#555555" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Original mass = 100%\nNew mass = 100% - 5% = 95%\nNew mass = 0.95 * 68 kg = 64.6 kg"
+            android:textSize="16sp"
+            android:paddingBottom="16dp"
+            android:textColor="#555555" />
+
+        <!-- Situation 2: Cloth Calculation -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Situation 2:\nPuan Ina buys a 14 m cloth costing RM210. The cloth is cut into 7 equal pieces. How much cloth is used for the tablecloth, and what is its cost?"
+            android:textSize="16sp"
+            android:paddingBottom="16dp"
+            android:textColor="#555555" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Length of tablecloth = (3/7) * 14 m = 6 m\nCost of tablecloth = (3/7) * RM210 = RM90"
+            android:textSize="16sp"
+            android:paddingBottom="16dp"
+            android:textColor="#555555" />
+
+    </LinearLayout>
+</ScrollView>

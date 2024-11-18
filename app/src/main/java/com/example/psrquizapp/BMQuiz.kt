@@ -17,27 +17,27 @@ class BMQuiz : AppCompatActivity() {
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
 
 
-        val Quiz1  = findViewById<Button>(R.id.Quiz1)
-        Quiz1.setOnClickListener{
+        val quiz1  = findViewById<Button>(R.id.Quiz1)
+        quiz1.setOnClickListener{
             val intent = Intent ( this, ArahanBM::class.java)
             startActivity(intent)
         }
 
         val Quiz2  = findViewById<Button>(R.id.Quiz2)
         Quiz2.setOnClickListener{
-            val intent = Intent ( this, BMQuiz2::class.java)
+            val intent = Intent ( this, ArahanBM2::class.java)
             startActivity(intent)
         }
 
         val Quiz3  = findViewById<Button>(R.id.Quiz3)
         Quiz3.setOnClickListener{
-            val intent = Intent ( this, BmQuiz3::class.java)
+            val intent = Intent ( this, ArahanBM3::class.java)
             startActivity(intent)
         }
 
         val Quiz4  = findViewById<Button>(R.id.Quiz4)
         Quiz4.setOnClickListener{
-            val intent = Intent ( this, BMQuiz4::class.java)
+            val intent = Intent ( this, ArahanBM4::class.java)
             startActivity(intent)
         }
 

@@ -1,9 +1,437 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BMLesson2"/>
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Peribahasa"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:textColor="#2D2D2D" />
+
+        <!-- Maksud Peribahasa Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Maksud Peribahasa"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"
+            android:textColor="#444444" />
+
+        <!-- Simpulan Bahasa Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="4dp"
+            android:paddingBottom="16dp"
+            android:text="Peribahasa merupakan susunan kata yang mempunyai maksud yang tersirat. Ia digunakan untuk menyampaikan teguran, nasihat, ingatan atau sindiran dalam bentuk kiasan yang telah diwarisi sejak zaman dahulu."
+            android:textColor="#555555"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simpulan Bahasa"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"
+            android:textColor="#444444" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp"
+            android:divider="#CCCCCC"
+            android:showDividers="middle">
+
+            <!-- Header Row -->
+            <TableRow android:background="#E0E0E0">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Simpulan Bahasa"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:background="#E0E0E0"
+                    android:textColor="#000000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Maksud"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:background="#E0E0E0"
+                    android:textColor="#000000" />
+            </TableRow>
+
+            <!-- Data Rows -->
+            <TableRow android:background="#FAFAFA">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ajak-ajak ayam"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:background="#FAFAFA"
+                    android:textColor="#333333" />
+
+                <HorizontalScrollView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:justificationMode="inter_word"
+                        android:lineSpacingExtra="4dp"
+                        android:padding="8dp"
+                        android:text="Tidak bersungguh-sungguh semasa mengajak seseorang."
+                        android:textColor="#333333" />
+                </HorizontalScrollView>
+            </TableRow>
+
+            <TableRow android:background="#FFFFFF">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Anak emas"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:background="#FFFFFF"
+                    android:textColor="#333333" />
+                <HorizontalScrollView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Anak yang disayangi oleh ibu bapa atau orang atasan."
+                        android:padding="8dp"
+                        android:justificationMode="inter_word"
+                        android:lineSpacingExtra="4dp"
+                        android:textColor="#333333" />
+                </HorizontalScrollView>
+            </TableRow>
+
+            <TableRow android:background="#FAFAFA">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Batu api"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:background="#FAFAFA"
+                    android:textColor="#333333" />
+                <HorizontalScrollView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Orang yang suka menghasut orang lain."
+                        android:padding="8dp"
+                        android:justificationMode="inter_word"
+                        android:lineSpacingExtra="4dp"
+                        android:textColor="#333333" />
+                </HorizontalScrollView>
+            </TableRow>
+        </TableLayout>
+
+        <!-- Maksud Bidalan Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Maksud Bidalan"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"
+            android:textColor="#444444" />
+
+        <!-- Bidalan Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="4dp"
+            android:paddingBottom="16dp"
+            android:text="Bidalan merupakan susun kata yang sering digunakan untuk memberikan pengajaran dan nasihat."
+            android:textColor="#555555"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bidalan"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"
+            android:textColor="#444444" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp"
+            android:divider="#CCCCCC"
+            android:showDividers="middle">
+
+            <!-- Header Row -->
+            <TableRow android:background="#E0E0E0">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Maksud"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:background="#E0E0E0"
+                    android:textColor="#000000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contoh Ayat"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:background="#E0E0E0"
+                    android:textColor="#000000" />
+            </TableRow>
+
+            <!-- Data Rows -->
+            <TableRow android:background="#FAFAFA">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Biar mati anak, jangan mati adat"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:background="#FAFAFA"
+                    android:textColor="#333333" />
+
+                <HorizontalScrollView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:justificationMode="inter_word"
+                        android:lineSpacingExtra="4dp"
+                        android:padding="8dp"
+                        android:text="Orang yang kuat berpegang pada adat."
+                        android:textColor="#333333" />
+                </HorizontalScrollView>
+            </TableRow>
+
+            <TableRow android:background="#FFFFFF">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Biar putih tulang jangan putih mata"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:background="#FFFFFF"
+                    android:textColor="#333333" />
+                <HorizontalScrollView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lebih baik mati daripada tidak dapat apa yang diidam."
+                        android:padding="8dp"
+                        android:justificationMode="inter_word"
+                        android:lineSpacingExtra="4dp"
+                        android:textColor="#333333" />
+                </HorizontalScrollView>
+            </TableRow>
+
+            <TableRow android:background="#FAFAFA">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ada udang di sebalik batu"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:background="#FAFAFA"
+                    android:textColor="#333333" />
+                <HorizontalScrollView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ada sesuatu yang dimahukan di sebalik perkara yang dilakukan."
+                        android:padding="8dp"
+                        android:justificationMode="inter_word"
+                        android:lineSpacingExtra="4dp"
+                        android:textColor="#333333" />
+                </HorizontalScrollView>
+            </TableRow>
+        </TableLayout>
+
+        <!-- Maksud Peribahasa Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Maksud Peribahasa"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"
+            android:textColor="#444444" />
+
+        <!-- Simpulan Bahasa Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="4dp"
+            android:paddingBottom="16dp"
+            android:text="Peribahasa ialah susunun kata yang mempunyai makna yang tertentu dan ianya selalu digunakan untuk menyampaikan nasihat, teguran atau sindiran."
+            android:textColor="#555555"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Peribahasa"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"
+            android:textColor="#444444" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp"
+            android:divider="#CCCCCC"
+            android:showDividers="middle">
+
+            <!-- Header Row -->
+            <TableRow android:background="#E0E0E0">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Peribahasa"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:background="#E0E0E0"
+                    android:textColor="#000000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Makna Peribahasa"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:background="#E0E0E0"
+                    android:textColor="#000000" />
+            </TableRow>
+
+            <!-- Data Rows -->
+            <TableRow android:background="#FAFAFA">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Indah khabar dari rupa"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:background="#FAFAFA"
+                    android:textColor="#333333" />
+
+                <HorizontalScrollView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:justificationMode="inter_word"
+                        android:lineSpacingExtra="4dp"
+                        android:padding="8dp"
+                        android:text="Perkara yang diceritakan melebih-lebih dari penceritaan yang asal."
+                        android:textColor="#333333" />
+                </HorizontalScrollView>
+            </TableRow>
+
+            <TableRow android:background="#FFFFFF">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ukur baju di badan sendiri"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:background="#FFFFFF"
+                    android:textColor="#333333" />
+                <HorizontalScrollView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Melakukan sesuatu perkara biarlah berdasarkan kemampuan diri sendiri."
+                        android:padding="8dp"
+                        android:justificationMode="inter_word"
+                        android:lineSpacingExtra="4dp"
+                        android:textColor="#333333" />
+                </HorizontalScrollView>
+            </TableRow>
+
+            <TableRow android:background="#FAFAFA">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Genggam bara api biar sampai jadi arang"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:background="#FAFAFA"
+                    android:textColor="#333333" />
+                <HorizontalScrollView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Apabila melakukan sesuatu pekerjaan hendaklah melakukan sehingga mencapai kejayaan."
+                        android:padding="8dp"
+                        android:justificationMode="inter_word"
+                        android:lineSpacingExtra="4dp"
+                        android:textColor="#333333" />
+                </HorizontalScrollView>
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -90,9 +90,9 @@ class BMQuiz4 : AppCompatActivity() {
 
                 // Show Toast for feedback and Log for debugging
                 if (isCorrect) {
-                    Toast.makeText(this, "Correct!", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Betul!", Toast.LENGTH_SHORT).show()
                 } else {
-                    Toast.makeText(this, "Incorrect!", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Salah!", Toast.LENGTH_SHORT).show()
                 }
                 Log.d("Quiz", "Selected Option Index: $selectedOptionIndex, Correct: $isCorrect")
 
@@ -106,7 +106,7 @@ class BMQuiz4 : AppCompatActivity() {
                 }
             }
         } else {
-            Toast.makeText(this, "Please select an option", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Sila buat pilihan", Toast.LENGTH_SHORT).show()
         }
     }
 
@@ -157,10 +157,10 @@ class BMQuiz4 : AppCompatActivity() {
     private fun getPerformance(finalScore: Int, totalQuestions: Int): String {
         val correctPercentage = (finalScore.toFloat() / totalQuestions) * 100
         return when {
-            correctPercentage >= 80 -> "Excellent"
-            correctPercentage >= 60 -> "Good"
-            correctPercentage >= 40 -> "Average"
-            else -> "Needs Improvement"
+            correctPercentage >= 80 -> "Cemerlang"
+            correctPercentage >= 60 -> "Bagus"
+            correctPercentage >= 40 -> "Sederhana"
+            else -> "Sila Buat pilihan"
         }
     }
 
