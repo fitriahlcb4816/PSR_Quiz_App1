@@ -88,5 +88,5 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:textStyle="bold"
-        android:text="Already Have An Account?" />
+        android:text="@string/already_have_an_account" />
 </LinearLayout>

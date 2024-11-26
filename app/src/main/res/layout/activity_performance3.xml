@@ -12,7 +12,7 @@
         android:id="@+id/resultTextView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Score: 0"
+        android:text="@string/score_0"
         android:textSize="18sp"
         android:textColor="#333333"
         android:gravity="center"
@@ -22,5 +22,5 @@
         android:id="@+id/quizBack"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Back to Quiz" />
+        android:text="@string/back_to_quiz" />
 </LinearLayout>

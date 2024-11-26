@@ -19,7 +19,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Username"
+            android:text="@string/Username"
             android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -28,7 +28,7 @@
             android:id="@+id/score"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Score"
+            android:text="@string/score"
             android:textColor="@color/black"
             android:textStyle="bold"
             android:textSize="16sp" />

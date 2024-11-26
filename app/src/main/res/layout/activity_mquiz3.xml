@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
@@ -28,10 +29,11 @@
             android:id="@+id/timerTextViewM2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="01:00"
+            android:text="@string/__01_00"
             android:textSize="20sp"
             android:textColor="#FF0000"
-            android:paddingStart="8dp" />
+            android:paddingStart="8dp"
+            tools:ignore="RtlSymmetry" />
     </LinearLayout>
 
     <!-- Quiz Progress -->
@@ -39,7 +41,7 @@
         android:id="@+id/progressTextViewM2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Question 1 of 5"
+        android:text="@string/Question_1_of_5"
         android:textSize="18sp"
         android:textColor="#757575"
         android:layout_centerHorizontal="true"
@@ -64,7 +66,7 @@
             android:id="@+id/questionTextViewM2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Question?"
+            android:text="@string/Question"
             android:textSize="20sp"
             android:textColor="#333333"
             android:paddingBottom="12dp" />
@@ -93,7 +95,7 @@
                 android:id="@+id/option1RadioButtonM2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Option 1"
+                android:text="@string/Option_1"
                 android:textSize="18sp"
                 android:textColor="#555555"
                 android:paddingVertical="8dp" />
@@ -102,7 +104,7 @@
                 android:id="@+id/option2RadioButtonM2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Option 2"
+                android:text="@string/Option_2"
                 android:textSize="18sp"
                 android:textColor="#555555"
                 android:paddingVertical="8dp" />
@@ -111,7 +113,7 @@
                 android:id="@+id/option3RadioButtonM2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Option 3"
+                android:text="@string/Option_3"
                 android:textSize="18sp"
                 android:textColor="#555555"
                 android:paddingVertical="8dp" />
@@ -120,7 +122,7 @@
                 android:id="@+id/option4RadioButtonM2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Option 4"
+                android:text="@string/Option_4"
                 android:textSize="18sp"
                 android:textColor="#555555"
                 android:paddingVertical="8dp" />
@@ -132,7 +134,7 @@
         android:id="@+id/submitButtonM2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Submit"
+        android:text="@string/Submit"
         android:textSize="18sp"
         android:textColor="@android:color/white"
         android:backgroundTint="#3F51B5"
@@ -147,7 +149,7 @@
         android:id="@+id/scoreTextViewM2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Score: 0"
+        android:text="@string/_score_0"
         android:textSize="18sp"
         android:textColor="#333333"
         android:layout_below="@id/submitButtonM2"

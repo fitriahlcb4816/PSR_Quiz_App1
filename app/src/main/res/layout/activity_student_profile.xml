@@ -11,32 +11,32 @@
         android:id="@+id/nameEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Name" />
+        android:hint="@string/name" />
 
     <EditText
         android:id="@+id/ageEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Age"
+        android:hint="@string/age"
         android:inputType="number" />
 
     <EditText
         android:id="@+id/gradeEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Grade" />
+        android:hint="@string/grade" />
 
     <Button
         android:id="@+id/saveButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Save Profile" />
+        android:text="@string/save_profile" />
 
     <Button
         android:id="@+id/logoutBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Logout" />
+        android:text="@string/logout" />
 
 
 </LinearLayout>
