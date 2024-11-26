@@ -127,4 +127,14 @@
     <string name="option_4_">Option 4</string>
     <string name="submit_">Submit</string>
     <string name="score_0_">Score: 0</string>
+    <string name="peribahasa">Peribahasa</string>
+    <string name="maksud_peribahasa">Maksud Peribahasa</string>
+    <string name="peribahasa_merupakan_susunan_kata_yang_mempunyai_maksud_yang_tersirat_ia_digunakan_untuk_menyampaikan_teguran_nasihat_ingatan_atau_sindiran_dalam_bentuk_kiasan_yang_telah_diwarisi_sejak_zaman_dahulu">Peribahasa merupakan susunan kata yang mempunyai maksud yang tersirat. Ia digunakan untuk menyampaikan teguran, nasihat, ingatan atau sindiran dalam bentuk kiasan yang telah diwarisi sejak zaman dahulu.</string>
+    <string name="simpulan_bahasa">Simpulan Bahasa</string>
+    <string name="Simpulan_bahasa">Simpulan Bahasa</string>
+    <string name="maksud">Maksud</string>
+    <string name="ajak_ajak_ayam">Ajak-ajak ayam</string>
+    <string name="tidak_bersungguh_sungguh_semasa_mengajak_seseorang">Tidak bersungguh-sungguh semasa mengajak seseorang.</string>
+    <string name="anak_emas">Anak emas</string>
+    <string name="anak_yang_disayangi_oleh_ibu_bapa_atau_orang_atasan">Anak yang disayangi oleh ibu bapa atau orang atasan.</string>
 </resources>

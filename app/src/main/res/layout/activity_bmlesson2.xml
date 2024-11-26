@@ -15,7 +15,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Peribahasa"
+            android:text="@string/peribahasa"
             android:textSize="26sp"
             android:textStyle="bold"
             android:gravity="center"
@@ -26,7 +26,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Maksud Peribahasa"
+            android:text="@string/maksud_peribahasa"
             android:textSize="22sp"
             android:textStyle="bold"
             android:paddingBottom="8dp"
@@ -39,14 +39,14 @@
             android:justificationMode="inter_word"
             android:lineSpacingExtra="4dp"
             android:paddingBottom="16dp"
-            android:text="Peribahasa merupakan susunan kata yang mempunyai maksud yang tersirat. Ia digunakan untuk menyampaikan teguran, nasihat, ingatan atau sindiran dalam bentuk kiasan yang telah diwarisi sejak zaman dahulu."
+            android:text="@string/peribahasa_merupakan_susunan_kata_yang_mempunyai_maksud_yang_tersirat_ia_digunakan_untuk_menyampaikan_teguran_nasihat_ingatan_atau_sindiran_dalam_bentuk_kiasan_yang_telah_diwarisi_sejak_zaman_dahulu"
             android:textColor="#555555"
             android:textSize="16sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Simpulan Bahasa"
+            android:text="@string/simpulan_bahasa"
             android:textSize="22sp"
             android:textStyle="bold"
             android:paddingBottom="8dp"
@@ -66,7 +66,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Simpulan Bahasa"
+                    android:text="@string/Simpulan_bahasa"
                     android:textStyle="bold"
                     android:padding="10dp"
                     android:gravity="center"
@@ -75,7 +75,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Maksud"
+                    android:text="@string/maksud"
                     android:textStyle="bold"
                     android:padding="10dp"
                     android:gravity="center"
@@ -88,7 +88,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Ajak-ajak ayam"
+                    android:text="@string/ajak_ajak_ayam"
                     android:padding="8dp"
                     android:gravity="center"
                     android:background="#FAFAFA"
@@ -105,7 +105,7 @@
                         android:justificationMode="inter_word"
                         android:lineSpacingExtra="4dp"
                         android:padding="8dp"
-                        android:text="Tidak bersungguh-sungguh semasa mengajak seseorang."
+                        android:text="@string/tidak_bersungguh_sungguh_semasa_mengajak_seseorang"
                         android:textColor="#333333" />
                 </HorizontalScrollView>
             </TableRow>
@@ -114,7 +114,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Anak emas"
+                    android:text="@string/anak_emas"
                     android:padding="8dp"
                     android:gravity="center"
                     android:background="#FFFFFF"
@@ -126,7 +126,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Anak yang disayangi oleh ibu bapa atau orang atasan."
+                        android:text="@string/anak_yang_disayangi_oleh_ibu_bapa_atau_orang_atasan"
                         android:padding="8dp"
                         android:justificationMode="inter_word"
                         android:lineSpacingExtra="4dp"
