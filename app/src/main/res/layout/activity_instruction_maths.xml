@@ -78,7 +78,7 @@
         android:id="@+id/QuestionM"
         android:layout_width="162dp"
         android:layout_height="51dp"
-        android:text="10 Questions"
+        android:text="@string/_10_questionS_"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.857"

@@ -12,6 +12,7 @@
         android:id="@+id/imageView8M1"
         android:layout_width="419dp"
         android:layout_height="372dp"
+        android:contentDescription="@string/toDo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"

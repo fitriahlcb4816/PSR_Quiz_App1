@@ -138,7 +138,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Batu api"
+                    android:text="@string/batu_api"
                     android:padding="8dp"
                     android:gravity="center"
                     android:background="#FAFAFA"
@@ -150,7 +150,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Orang yang suka menghasut orang lain."
+                        android:text="@string/orang_yang_suka_menghasut_orang_lain"
                         android:padding="8dp"
                         android:justificationMode="inter_word"
                         android:lineSpacingExtra="4dp"
@@ -163,7 +163,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Maksud Bidalan"
+            android:text="@string/maksud_bidalan"
             android:textSize="22sp"
             android:textStyle="bold"
             android:paddingBottom="8dp"
@@ -176,14 +176,14 @@
             android:justificationMode="inter_word"
             android:lineSpacingExtra="4dp"
             android:paddingBottom="16dp"
-            android:text="Bidalan merupakan susun kata yang sering digunakan untuk memberikan pengajaran dan nasihat."
+            android:text="@string/bidalan_merupakan_susun_kata_yang_sering_digunakan_untuk_memberikan_pengajaran_dan_nasihat"
             android:textColor="#555555"
             android:textSize="16sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Bidalan"
+            android:text="@string/bidalan"
             android:textSize="22sp"
             android:textStyle="bold"
             android:paddingBottom="8dp"
@@ -203,7 +203,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Maksud"
+                    android:text="@string/maksud_"
                     android:textStyle="bold"
                     android:padding="10dp"
                     android:gravity="center"
@@ -212,7 +212,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Contoh Ayat"
+                    android:text="@string/contoh_ayat"
                     android:textStyle="bold"
                     android:padding="10dp"
                     android:gravity="center"
@@ -225,7 +225,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Biar mati anak, jangan mati adat"
+                    android:text="@string/biar_mati_anak_jangan_mati_adat"
                     android:padding="8dp"
                     android:gravity="center"
                     android:background="#FAFAFA"
@@ -242,7 +242,7 @@
                         android:justificationMode="inter_word"
                         android:lineSpacingExtra="4dp"
                         android:padding="8dp"
-                        android:text="Orang yang kuat berpegang pada adat."
+                        android:text="@string/orang_yang_kuat_berpegang_pada_adat"
                         android:textColor="#333333" />
                 </HorizontalScrollView>
             </TableRow>
@@ -251,7 +251,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Biar putih tulang jangan putih mata"
+                    android:text="@string/biar_putih_tulang_jangan_putih_mata"
                     android:padding="8dp"
                     android:gravity="center"
                     android:background="#FFFFFF"
@@ -263,7 +263,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Lebih baik mati daripada tidak dapat apa yang diidam."
+                        android:text="@string/lebih_baik_mati_daripada_tidak_dapat_apa_yang_diidam"
                         android:padding="8dp"
                         android:justificationMode="inter_word"
                         android:lineSpacingExtra="4dp"
@@ -275,7 +275,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Ada udang di sebalik batu"
+                    android:text="@string/ada_udang_di_sebalik_batu"
                     android:padding="8dp"
                     android:gravity="center"
                     android:background="#FAFAFA"
@@ -287,7 +287,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Ada sesuatu yang dimahukan di sebalik perkara yang dilakukan."
+                        android:text="@string/ada_sesuatu_yang_dimahukan_di_sebalik_perkara_yang_dilakukan"
                         android:padding="8dp"
                         android:justificationMode="inter_word"
                         android:lineSpacingExtra="4dp"
@@ -300,7 +300,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Maksud Peribahasa"
+            android:text="@string/maksud_peribahasa_"
             android:textSize="22sp"
             android:textStyle="bold"
             android:paddingBottom="8dp"
@@ -313,14 +313,14 @@
             android:justificationMode="inter_word"
             android:lineSpacingExtra="4dp"
             android:paddingBottom="16dp"
-            android:text="Peribahasa ialah susunun kata yang mempunyai makna yang tertentu dan ianya selalu digunakan untuk menyampaikan nasihat, teguran atau sindiran."
+            android:text="@string/peribahasa_ialah_susunun_kata_yang_mempunyai_makna_yang_tertentu_dan_ianya_selalu_digunakan_untuk_menyampaikan_nasihat_teguran_atau_sindiran"
             android:textColor="#555555"
             android:textSize="16sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Peribahasa"
+            android:text="@string/peribahasA"
             android:textSize="22sp"
             android:textStyle="bold"
             android:paddingBottom="8dp"
@@ -340,7 +340,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Peribahasa"
+                    android:text="@string/peribahasa_"
                     android:textStyle="bold"
                     android:padding="10dp"
                     android:gravity="center"
@@ -349,7 +349,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Makna Peribahasa"
+                    android:text="@string/makna_peribahasa"
                     android:textStyle="bold"
                     android:padding="10dp"
                     android:gravity="center"
@@ -362,7 +362,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Indah khabar dari rupa"
+                    android:text="@string/indah_khabar_dari_rupa"
                     android:padding="8dp"
                     android:gravity="center"
                     android:background="#FAFAFA"
@@ -379,7 +379,7 @@
                         android:justificationMode="inter_word"
                         android:lineSpacingExtra="4dp"
                         android:padding="8dp"
-                        android:text="Perkara yang diceritakan melebih-lebih dari penceritaan yang asal."
+                        android:text="@string/perkara_yang_diceritakan_melebih_lebih_dari_penceritaan_yang_asal"
                         android:textColor="#333333" />
                 </HorizontalScrollView>
             </TableRow>
@@ -388,7 +388,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Ukur baju di badan sendiri"
+                    android:text="@string/ukur_baju_di_badan_sendiri"
                     android:padding="8dp"
                     android:gravity="center"
                     android:background="#FFFFFF"
@@ -400,7 +400,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Melakukan sesuatu perkara biarlah berdasarkan kemampuan diri sendiri."
+                        android:text="@string/melakukan_sesuatu_perkara_biarlah_berdasarkan_kemampuan_diri_sendiri"
                         android:padding="8dp"
                         android:justificationMode="inter_word"
                         android:lineSpacingExtra="4dp"
@@ -412,7 +412,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Genggam bara api biar sampai jadi arang"
+                    android:text="@string/genggam_bara_api_biar_sampai_jadi_arang"
                     android:padding="8dp"
                     android:gravity="center"
                     android:background="#FAFAFA"
@@ -424,7 +424,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Apabila melakukan sesuatu pekerjaan hendaklah melakukan sehingga mencapai kejayaan."
+                        android:text="@string/apabila_melakukan_sesuatu_pekerjaan_hendaklah_melakukan_sehingga_mencapai_kejayaan"
                         android:padding="8dp"
                         android:justificationMode="inter_word"
                         android:lineSpacingExtra="4dp"

@@ -55,7 +55,7 @@
             android:id="@+id/questionTextView1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Question?"
+            android:text="@string/quEstion__"
             android:textSize="20sp"
             android:textColor="#333333"
             android:paddingBottom="12dp" />

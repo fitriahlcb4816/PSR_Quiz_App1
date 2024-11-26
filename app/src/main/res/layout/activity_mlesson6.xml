@@ -1,11 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
     tools:context=".MLesson6">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Section Title -->
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pie_chart"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/descriptionTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/pie_chart_ndiagrams_that_show_division_or_breakdown_of_data_or_information_in_circles_neach_value_is_represented_by_one_sector_of_the_circle"
+            android:textSize="16sp"
+            android:background="@drawable/text_background"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titleTextView"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Example -->
+        <TextView
+            android:id="@+id/exampleTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/example_nsarah_has_80_pieces_of_picture_cards_of_vertebrates_the_pie_chart_shows_the_classification_of_vertebrates"
+            android:textSize="16sp"
+            android:background="@drawable/text_background"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/descriptionTextView"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Pie Chart Placeholder -->
+
+        <!-- Solution Section -->
+        <ImageView
+            android:id="@+id/pieChartImageView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:contentDescription="@string/pie_chart_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/exampleTextView"
+            app:srcCompat="@drawable/pie" />
+
+        <TextView
+            android:id="@+id/solutionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/solution"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/pieChartImageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Part A -->
+
+        <!-- Part B -->
+        <TextView
+            android:id="@+id/partATextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_background"
+            android:padding="16dp"
+            android:text="@string/a_what_is_the_percentage_of_amphibians_n_npercentage_of_amphibians_n100_25_20_15_35_n_100_95_n_5"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/solutionTextView" />
+
+        <TextView
+            android:id="@+id/partBTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/b_find_the_difference_between_the_number_of_mammals_and_bird_picture_cards_n_nmammals_25_100_80_20_pieces_nbirds_35_100_80_28_pieces_n_nthe_difference_between_the_number_of_picture_cards_of_mammals_and_birds_nbird_picture_cards_mammal_picture_cards_28_pieces_20_pieces_8_pieces"
+            android:textSize="16sp"
+            android:background="@drawable/text_background"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/partATextView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    android:background="@color/white">
+    android:background="@color/white"
+    tools:context=".MLesson4">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,7 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:text="Right Angle\n\nThe exact angle is 90°. Only right angles have a small square between the two lines."
+            android:text="@string/right_angle_n_nthe_exact_angle_is_90_only_right_angles_have_a_small_square_between_the_two_lines"
             android:textColor="#000000"
             android:textSize="16sp"
             android:gravity="center" />

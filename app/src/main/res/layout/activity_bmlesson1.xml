@@ -8,13 +8,13 @@
     android:background="@color/white"
     tools:context=".BMLesson1">
 
+
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/Karangan"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp"
         tools:ignore="MissingConstraints" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

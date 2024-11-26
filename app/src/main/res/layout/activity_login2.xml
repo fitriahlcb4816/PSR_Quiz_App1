@@ -65,17 +65,17 @@
         android:layout_height="wrap_content">
     <Button
         android:id="@+id/btn_Login"
-        android:layout_width="372dp"
+        android:layout_width="370dp"
         android:layout_marginBottom="80dp"
-        android:layout_height="wrap_content"
+        android:layout_height="52dp"
         android:text="@string/login">
     </Button>
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/btn_Register"
-        android:layout_width="372dp"
-        android:layout_height="wrap_content"
+        android:layout_width="370dp"
+        android:layout_height="52dp"
         android:text="@string/Register">
 
     </Button>
@@ -86,6 +86,6 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:textStyle="bold"
-        android:text="Dont' Have An Account?" />
+        android:text="@string/dont_have_an_account" />
 
 </LinearLayout>

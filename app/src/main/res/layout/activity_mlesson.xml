@@ -12,6 +12,7 @@
         android:id="@+id/imageView5"
         android:layout_width="415dp"
         android:layout_height="440dp"
+        android:contentDescription="@string/_Todo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"

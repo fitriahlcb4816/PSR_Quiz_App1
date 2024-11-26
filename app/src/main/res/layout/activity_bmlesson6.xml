@@ -14,7 +14,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Kata Adjektif"
+            android:text="@string/kata_adjektif"
             android:textSize="20sp"
             android:textStyle="bold"
             android:layout_gravity="center"
@@ -34,7 +34,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Jenis"
+                    android:text="@string/jenis"
                     android:textStyle="bold"
                     android:gravity="center"
                     android:padding="8dp" />
@@ -43,7 +43,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Contoh Kata Adjektif"
+                    android:text="@string/contoh_kata_adjektif"
                     android:textStyle="bold"
                     android:gravity="center"
                     android:padding="8dp" />
@@ -52,7 +52,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Contoh Ayat"
+                    android:text="@string/contoh_ayat_"
                     android:textStyle="bold"
                     android:gravity="center"
                     android:padding="8dp" />
@@ -64,7 +64,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Pancaindera"
+                    android:text="@string/pancaindera"
                     android:padding="8dp"
                     android:gravity="start" />
 
@@ -72,7 +72,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Pahit, manis, sedap, cantik, tampan, busuk, wangi, licin, kasar"
+                    android:text="@string/pahit_manis_sedap_cantik_tampan_busuk_wangi_licin_kasar"
                     android:padding="8dp"
                     android:gravity="start" />
 
@@ -80,33 +80,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Izzat seorang lelaki yang tampan.\nGula-gula ini rasa sangat manis."
-                    android:padding="8dp"
-                    android:gravity="start" />
-            </TableRow>
-
-            <TableRow android:background="#F8F8F8">
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Perasaan"
-                    android:padding="8dp"
-                    android:gravity="start" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Gembira, suka, rindu, berani, ragu, benci, kasih"
-                    android:padding="8dp"
-                    android:gravity="start" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Ramli rindu akan ibunya di kampung.\nMuthu seorang budak yang berani."
+                    android:text="@string/izzat_seorang_lelaki_yang_tampan_ngula_gula_ini_rasa_sangat_manis"
                     android:padding="8dp"
                     android:gravity="start" />
             </TableRow>
@@ -116,7 +90,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Perasaan"
+                    android:text="@string/perasaan"
                     android:padding="8dp"
                     android:gravity="start" />
 
@@ -124,7 +98,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Gembira, suka, rindu, berani, ragu, benci, kasih"
+                    android:text="@string/gembira_suka_rindu_berani_ragu_benci_kasih"
                     android:padding="8dp"
                     android:gravity="start" />
 
@@ -132,33 +106,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Ramli rindu akan ibunya di kampung.\nMuthu seorang budak yang berani."
-                    android:padding="8dp"
-                    android:gravity="start" />
-            </TableRow>
-
-            <TableRow android:background="#F8F8F8">
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Perasaan"
-                    android:padding="8dp"
-                    android:gravity="start" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Gembira, suka, rindu, berani, ragu, benci, kasih"
-                    android:padding="8dp"
-                    android:gravity="start" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Ramli rindu akan ibunya di kampung.\nMuthu seorang budak yang berani."
+                    android:text="@string/ramli_rindu_akan_ibunya_di_kampung_nmuthu_seorang_budak_yang_berani"
                     android:padding="8dp"
                     android:gravity="start" />
             </TableRow>
@@ -168,7 +116,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Perasaan"
+                    android:text="@string/bentuk"
                     android:padding="8dp"
                     android:gravity="start" />
 
@@ -176,7 +124,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Gembira, suka, rindu, berani, ragu, benci, kasih"
+                    android:text="@string/bujur_bengkok_kempis_lurus_bulat_leper"
                     android:padding="8dp"
                     android:gravity="start" />
 
@@ -184,7 +132,189 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Ramli rindu akan ibunya di kampung.\nMuthu seorang budak yang berani."
+                    android:text="@string/bola_sepak_itu_berbentuk_bulat_ntiang_itu_bengkok_dilanggar_kereta"
+                    android:padding="8dp"
+                    android:gravity="start" />
+            </TableRow>
+
+            <TableRow android:background="#F8F8F8">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/ukuran"
+                    android:padding="8dp"
+                    android:gravity="start" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/panjang_pendek_kecil_besar_tinggi_rendah_tebal_nipis"
+                    android:padding="8dp"
+                    android:gravity="start" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/menara_klcc_sangat_tinggi_nkamus_itu_sangat_tebal"
+                    android:padding="8dp"
+                    android:gravity="start" />
+            </TableRow>
+
+            <TableRow android:background="#F8F8F8">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/tabiat"
+                    android:padding="8dp"
+                    android:gravity="start" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/baik_jahat_cerdik_pandai_lemah_sihat_gopoh"
+                    android:padding="8dp"
+                    android:gravity="start" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/irfan_seorang_pelajar_yang_sangat_pandai_ntubuh_atlet_itu_sihat_dan_tegap"
+                    android:padding="8dp"
+                    android:gravity="start" />
+            </TableRow>
+
+            <TableRow android:background="#F8F8F8">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/cara"
+                    android:padding="8dp"
+                    android:gravity="start" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/cepat_deras_laju_perlahan_jelas_lincah"
+                    android:padding="8dp"
+                    android:gravity="start" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/kereta_itu_dipandu_dengan_sangat_laju_nmessi_merupakan_pemain_bola_yang_lincah"
+                    android:padding="8dp"
+                    android:gravity="start" />
+            </TableRow>
+
+            <TableRow android:background="#F8F8F8">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/waktu"
+                    android:padding="8dp"
+                    android:gravity="start" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/lama_lewat_lampau_suntuk_awal_segera"
+                    android:padding="8dp"
+                    android:gravity="start" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/kamal_lewat_ke_tempat_kerjanya_nperjalanan_ke_kelantan_mengabil_masa_yang_amat_lama"
+                    android:padding="8dp"
+                    android:gravity="start" />
+            </TableRow>
+
+            <TableRow android:background="#F8F8F8">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/jarak"
+                    android:padding="8dp"
+                    android:gravity="start" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/jauh_dekat_hampir_nyaris_rapat"
+                    android:padding="8dp"
+                    android:gravity="start" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/calvin_nyaris_dilanggar_kereta_npasar_malam_itu_dekat_dengan_rumah_saya"
+                    android:padding="8dp"
+                    android:gravity="start" />
+            </TableRow>
+
+            <TableRow android:background="#F8F8F8">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/warna"
+                    android:padding="8dp"
+                    android:gravity="start" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/merah_kuning_biru_hitam_hijau_kelabu"
+                    android:padding="8dp"
+                    android:gravity="start" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/lelaki_berbaju_hitam_itu_bapa_nurin_nmanchester_city_berjersi_biru_pada_perlawanan_ini"
+                    android:padding="8dp"
+                    android:gravity="start" />
+            </TableRow>
+
+            <TableRow android:background="#F8F8F8">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/keadaan"
+                    android:padding="8dp"
+                    android:gravity="start" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/buruk_kemas_kasar_lemah_miskin_sibuk"
+                    android:padding="8dp"
+                    android:gravity="start" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/mizan_berpakaian_kemas_untuk_sesi_temu_duga_nmurid_itu_ditegur_gurunya_kerana_dia_berkelakuan_kasar"
                     android:padding="8dp"
                     android:gravity="start" />
             </TableRow>

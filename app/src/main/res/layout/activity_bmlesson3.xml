@@ -15,7 +15,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Kata Ganda"
+            android:text="@string/kata_ganda"
             android:textSize="26sp"
             android:textStyle="bold"
             android:gravity="center"

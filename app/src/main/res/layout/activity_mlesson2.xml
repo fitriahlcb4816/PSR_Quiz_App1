@@ -4,76 +4,80 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
     android:background="@color/white"
-    tools:context=".MainActivity">
+    tools:context=".MLesson2">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:padding="16dp">
 
-        <!-- Section: Cost Price, Selling Price, Profit and Loss -->
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
+        <!-- Title -->
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            app:cardElevation="4dp"
-            app:cardBackgroundColor="#FFFFFF"
-            android:padding="16dp">
+            android:text="Ratio"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="12dp" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+        <!-- Situation 1 -->
+        <TextView
+            android:id="@+id/situation1TitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SITUATION 1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/titleTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="8dp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Financial Management"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:textColor="#000000"
-                    android:paddingBottom="8dp" />
+        <TextView
+            android:id="@+id/situation1DescriptionTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="The ratio of the number of blue balls to the number of red balls is one to three.\n\nThe ratio 1 to 3 is written as 1:3. The ratio of the number of red balls to the number of blue balls is three to one as written as 3:1.\n\nThe ratio of the number of blue balls to all the balls is 1:4.\nThe ratio of all the balls to the number of red balls is 4:3."
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/situation1TitleTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="16dp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Cost Price, Selling Price, Profit and Loss"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:paddingBottom="8dp" />
+        <!-- Situation 2 -->
+        <TextView
+            android:id="@+id/situation2TitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SITUATION 2"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/situation1DescriptionTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="8dp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingBottom="4dp"
-                    android:text="Selling price: The price of an item that must be paid by the buyer."
-                    android:textSize="14sp" />
+        <TextView
+            android:id="@+id/situation2DescriptionTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Puan Sameen buys some ribbons to decorate a few wedding gifts.\n\nThe length of the pink ribbon and the green ribbon is 7 m and 3 m respectively.\n\nThe ratio of the length of the pink ribbon to the green ribbon is 7:3.\nThe ratio of the length of the green ribbon to the pink ribbon is 3:7.\n\nThe ratio of the length of the pink ribbon to the total length of ribbons is 7:10.\n\nThe ratio of the total length of the ribbons to the green ribbon is 10:3."
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/situation2TitleTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Cost price: The price of goods acquired before being sold to others."
-                    android:textSize="14sp"
-                    android:paddingBottom="4dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Profit: The money earned from selling something after deducting the cost price."
-                    android:textSize="14sp"
-                    android:paddingBottom="4dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Loss: Reduced value of money because the cost price is higher than the selling price."
-                    android:textSize="14sp" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <!-- Other sections follow the same structure -->
-
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

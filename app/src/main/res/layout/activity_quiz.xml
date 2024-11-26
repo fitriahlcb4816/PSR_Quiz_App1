@@ -10,10 +10,11 @@
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="465dp"
-        android:layout_height="540dp"
+        android:layout_width="408dp"
+        android:layout_height="548dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
@@ -21,24 +22,25 @@
 
     <Button
         android:id="@+id/buttonBM"
-        android:layout_width="365dp"
-        android:layout_height="107dp"
+        android:layout_width="375dp"
+        android:layout_height="80dp"
         android:text="@string/bahasa_melayu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.689" />
+        app:layout_constraintVertical_bias="0.702" />
 
     <Button
         android:id="@+id/buttonM"
-        android:layout_width="365dp"
-        android:layout_height="107dp"
+        android:layout_width="375dp"
+        android:layout_height="80dp"
         android:text="@string/mathematics"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.88" />
+        app:layout_constraintVertical_bias="0.833" />
 </androidx.constraintlayout.widget.ConstraintLayout>
