@@ -11,21 +11,20 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="398dp"
-        android:layout_height="300dp"
+        android:layout_width="479dp"
+        android:layout_height="350dp"
         android:contentDescription="@string/__todo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.125"
+        app:layout_constraintVertical_bias="0.224"
         app:srcCompat="@drawable/__removebg_preview" />
 
     <Button
         android:id="@+id/btnQuiz"
         android:layout_width="152dp"
-        android:layout_height="56dp"
+        android:layout_height="60dp"
         android:text="@string/Quiz"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,7 +36,7 @@
     <Button
         android:id="@+id/btnLeaderboard"
         android:layout_width="152dp"
-        android:layout_height="56dp"
+        android:layout_height="60dp"
         android:text="@string/Leaderboard"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -49,7 +48,7 @@
     <Button
         android:id="@+id/Profile"
         android:layout_width="152dp"
-        android:layout_height="56dp"
+        android:layout_height="60dp"
         android:text="@string/Profile"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -61,8 +60,8 @@
     <Button
         android:id="@+id/material"
         android:layout_width="152dp"
-        android:layout_height="56dp"
-        android:text="@string/material_"
+        android:layout_height="60dp"
+        android:text="@string/Material_"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.138"

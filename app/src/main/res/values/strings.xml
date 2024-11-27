@@ -246,4 +246,5 @@
     <string name="right_angle_n_nthe_exact_angle_is_90_only_right_angles_have_a_small_square_between_the_two_lines">Right Angle\n\nThe exact angle is 90°. Only right angles have a small square between the two lines.</string>
     <string name="time_zone">Time Zone</string>
     <string name="material_">material</string>
+    <string name="Material_">Material</string>
 </resources>
