@@ -15,6 +15,9 @@
         android:theme="@style/Theme.PSRQuizApp"
         tools:targetApi="31">
         <activity
+            android:name=".Home1"
+            android:exported="false" />
+        <activity
             android:name=".PerformanceActivity3"
             android:exported="false" />
         <activity

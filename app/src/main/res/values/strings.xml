@@ -247,4 +247,8 @@
     <string name="time_zone">Time Zone</string>
     <string name="material_">material</string>
     <string name="Material_">Material</string>
+    <string name="material1">Material</string>
+    <string name="profile1">Profile</string>
+    <string name="quiz1">Quiz</string>
+    <string name="leaderboard1">Leaderboard</string>
 </resources>
