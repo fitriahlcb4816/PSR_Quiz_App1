@@ -12,7 +12,7 @@ class Home : AppCompatActivity() {
 
         setContentView(R.layout.activity_home)
 
-        val button = findViewById<Button>(R.id.button)
+        val button = findViewById<Button>(R.id.material)
         button.setOnClickListener{
             val intent = Intent (this, Material::class.java)
             startActivity(intent)
