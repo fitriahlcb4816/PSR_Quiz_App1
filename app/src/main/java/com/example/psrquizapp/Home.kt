@@ -18,7 +18,7 @@ class Home : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val btnQuiz = findViewById<Button>(R.id.btnQuiz)
+        val btnQuiz = findViewById<Button>(R.id.btnQuiz2)
         btnQuiz.setOnClickListener{
             val intent = Intent (this, Quiz::class.java)
             startActivity(intent)

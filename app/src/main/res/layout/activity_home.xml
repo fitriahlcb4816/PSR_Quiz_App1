@@ -22,7 +22,19 @@
         app:srcCompat="@drawable/__removebg_preview" />
 
     <Button
-        android:id="@+id/btnQuiz"
+        android:id="@+id/material"
+        android:layout_width="152dp"
+        android:layout_height="60dp"
+        android:text="@string/material__"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.702" />
+
+    <Button
+        android:id="@+id/btnQuiz2"
         android:layout_width="152dp"
         android:layout_height="60dp"
         android:text="@string/Quiz"
@@ -56,17 +68,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.857" />
-
-    <Button
-        android:id="@+id/material"
-        android:layout_width="152dp"
-        android:layout_height="60dp"
-        android:text="@string/Material_"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.138"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.703" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
